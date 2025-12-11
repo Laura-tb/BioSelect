@@ -1,0 +1,394 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-inline: 16px;
+}
+
+/*Mobile*/
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.header__search,
+.header__nav {
+    display: none;
+}
+
+/*Desktop*/
+@media (min-width: 768px) {
+    .grid-12 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+    }
+
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-inline: 16px;
+    }
+
+    .icon__search,
+    .burger__menu {
+        display: none;
+    }
+
+    .header__search,
+    .header__nav {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-1 {
+        grid-column: span 1;
+    }
+
+    .col-2 {
+        grid-column: span 2;
+    }
+
+    .col-3 {
+        grid-column: span 3;
+    }
+
+    .col-4 {
+        grid-column: span 4;
+    }
+
+    .col-5 {
+        grid-column: span 5;
+    }
+
+    .col-6 {
+        grid-column: span 6;
+    }
+
+    .col-7 {
+        grid-column: span 7;
+    }
+
+    .col-8 {
+        grid-column: span 8;
+    }
+
+    .col-9 {
+        grid-column: span 9;
+    }
+
+    .col-10 {
+        grid-column: span 10;
+    }
+
+    .col-11 {
+        grid-column: span 11;
+    }
+
+    .col-12 {
+        grid-column: span 12;
+    }
+}
+
+/*Header*/
+.header__top {
+    height: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-block: 12px;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    vertical-align: text-bottom;
+}
+
+.logo span {
+    color: var(--color-gray-900);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 38px;
+    letter-spacing: -0.96px;
+}
+
+.header__search {
+    align-items: center;
+}
+
+input {
+    width: 300px;
+    padding: 12px 18px 12px 16px;
+    color: var(--color-gray-500);
+    border: 1px solid var(--color-gray-100);
+}
+
+.icon img{
+    width:40px;
+    height: 25px;
+    color:var(--color-gray-900); 
+}
+
+.icon a:hover{
+    cursor:pointer;
+    color:var(--color-primary);
+
+}
+.header__nav {
+    background-color: var(--color-white);
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-block: 12px;
+}
+
+
+.nav__links {
+    display: flex;
+    gap: 27px;
+}
+
+.nav__links a:hover {
+    color: var(--color-primary);
+}
+
+
+/*Banner */
+.hero__inner {
+    display: flex;
+    padding-block: 12px;
+}
+
+.hero {
+    background-image: url("assets/img/banner/cesta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero__image {
+    width: 742px;
+    height: 498px;
+}
+
+.hero__title {
+    width: 596px;
+    color: var(--color-gray-900);
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.hero__subtitle {
+    color: var(--color-gray-900);
+    font-size: 25px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 120%;
+}
+
+.hero__highlight {
+    color: var(--color-warning);
+    font-size: 32px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 120%;
+}
+
+/*Categories*/
+.categories {
+    background-color: var(--color-white);
+}
+
+.section__header {
+    color: var(--color-gray-900);
+    justify-items: center;
+}
+
+/*Mobile*/
+.categories__grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/*Desktop*/
+@media(min-width: 768px) {
+    .categories__grid {
+        gap: 20px;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+}
+
+.category {
+    display: inline-flex;
+    padding: 16px 0 24px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--color-gray-100);
+    background: var(--color-white);
+}
+
+.category img {
+    max-width: 100%;
+}
+
+.category__text {
+    color: var(--color-gray-900);
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+/*Sales*/
+
+.sales {
+    background-color: var(--color-gray-50);
+}
+
+/*Mobile*/
+.sales__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*Desktop*/
+@media(min-width: 768px) {
+    .sales__grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+.sales__item {
+    border: 1px solid var(--color-gray-100);
+    background-color: var(--color-white);
+}
+
+.sales__img {
+    text-align: center;
+}
+
+.sales img {
+    max-width: 100%;
+}
+
+.sales__productInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.sales__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.sales__name {
+    color: var(--color-gray-700);
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.sales__price {
+    color: var(--color-gray-900);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    margin: 2px;
+}
+
+.sales__rating {
+    display: flex;
+    align-items: flex-start;
+}
+
+.button__cart {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+}
+
+.button__cart img {
+    color: var(--color-gray-900);
+}
+
+.sales__item__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/*Featured products*/
+.featured {
+    background-color: var(--color-white);
+}
+
+/*Footer */
+.footer {
+    background-color: var(--color-gray-900);
+    color: var(--color-gray-50);
+    padding: 16px 0;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.footer__bottom {
+    text-align: center;
+    color: var(--color-gray-400);
+    border-top: 1px solid var(--color-gray-700);
+    margin-top: 16px;
+    padding-top: 16px;
+}
+
+.footer .logo span {
+    color: var(--color-gray-50);
+    font-size: 20px;
+}
+
+.footer .logo img {
+    width: 22px;
+    height: 22px;
+    ;
+}
+
+.footer__left {
+    width: 40%;
+}
+
+.footer__links {
+    width: 20%;
+}
+
+.footer__links h4 {
+    font-weight: 400;
+}
+
+.footer__links a {
+    color: var(--color-gray-400);
+}
+
+.footer p {
+    color: var(--color-gray-400);
+}

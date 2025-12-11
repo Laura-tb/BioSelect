@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ecobazar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header__top">
+            <div class="burger__menu">
+                <a class="icon" href="">
+                    <img src="assets/icons/burger_menu.svg">
+                </a>
+            </div>
+            
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
+                    <span>Ecobazar</span>
+                </a>
+            </div>
+
+            <div class="header__search">
+                <input type="text" placeholder="Búsqueda de productos">
+                <button class="button">Buscar</button>
+            </div>
+
+            <div class="header__icons">
+                <a class="icon icon__search" href="">
+                    <img src="assets/icons/search.svg">
+                </a>
+                <a class="icon" href="">
+                    <img src="assets/icons/Cart.svg">
+                </a>
+                <a class="icon" href="">
+                    <img src="assets/icons/user_3 1.svg">
+                </a>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <div class="container nav__inner">
+                <div class="nav__links">
+                    <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    <a href="products.html" class="nav__link">Productos</a>
+                    <a href="contact.html" class="nav__link">Contacto</a>
+                    <a href="about.html" class="nav__link">Sobre nosotros</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!--Banner-->
+        <section class="hero">
+            <div class="hero__inner">
+                <div class="container">
+                    <!-- Flecha izq -->
+                    <button class="hero__arrow hero__arrow--left" aria-label="Anterior">❮</button>
+
+                    <!-- Imagen cesta -->
+                    <div class="hero__image">
+                        <img src="" alt="Cesta de vegetales">
+                    </div>
+
+                    <!-- Texto -->
+                    <div class="hero__content">
+                        <div class="hero__title heading-01-600">Alimentos ecológicos</div>
+                        <div class="hero__subtitle body-xxl-400">
+                            Descuentos hasta el <span class="hero__highlight">30%</span>
+                        </div>
+                        <button class="button">
+                            Comprar
+                            <span class="hero__cta-icon">➜</span>
+                        </button>
+                    </div>
+
+                    <!-- Flecha dcha -->
+                    <button class="hero__arrow hero__arrow--right" aria-label="Siguiente">❯</button>
+
+                    <!-- Dots -->
+                    <div class="hero__dots">
+                        <span class="hero__dot hero__dot--active"></span>
+                        <span class="hero__dot"></span>
+                        <span class="hero__dot"></span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Categories-->
+        <section class="categories">
+            <div class="container grid grid-12">
+                <header class="section__header col-12">
+                    <h2>Categorías</h2>
+                </header>
+
+                <div class="categories__grid col-12">
+
+                    <article class="category">
+                        <img src="assets/img/categories/frutas.jpg" alt="Frutas">
+                        <h3 class="category__text">Frutas</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/hortalizas.jpg" alt="Hortalizas">
+                        <h3 class="category__text">Hortalizas</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/carne.jpg" alt="Carne y pescado">
+                        <h3 class="category__text">Carne y pescado</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/snacks.jpg" alt="Snacks">
+                        <h3 class="category__text">Snacks</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/bebidas.jpg" alt="Bebidas">
+                        <h3 class="category__text">Bebidas</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/higiene.jpg" alt="Higiene personal">
+                        <h3 class="category__text">Higiene personal</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/bolleria.jpg" alt="Bolleria">
+                        <h3 class="category__text">Bollería</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/desayuno.jpg" alt="Desayuno">
+                        <h3 class="category__text">Desayuno</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/despensa.jpg" alt="Despensa">
+                        <h3 class="category__text">Despensa</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/complementos.jpg" alt="Complementos">
+                        <h3 class="category__text">Complementos</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/limpieza.jpg" alt="Limpieza">
+                        <h3 class="category__text">Limpieza</h3>
+                    </article>
+
+                    <article class="category">
+                        <img src="assets/img/categories/aceite.jpg" alt="Aceite">
+                        <h3 class="category__text">Aceite</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--Offers-->
+        <section class="sales">
+            <div class="container grid grid-12">
+                <header class="section__header col-12">
+                    <h2>Ofertas especiales</h2>
+                </header>
+
+                <div class="sales__grid col-12">
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--Products-->
+        <section class="featured">
+            <div class="container grid grid-12">
+                <header class="section__header col-12">
+                    <h2>Productos destacados</h2>
+                </header>
+
+                <div class="sales__grid col-12">
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Manzana verde</h4>
+                                    <h5 class="sales__price">1,99€</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="logo">
+                        <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
+                        <span>Ecobazar</span>
+                    </div>
+
+                    <p>
+                        Mercado ecológico con los mejores productos frescos. 100% natural.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Mi Perfil</h4>
+                    <ul>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Carrito</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Términos & Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Tienda</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer__bottom">
+                <span>Ecobazar © 2025 - Todos los derechos reservados</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+
+</html>

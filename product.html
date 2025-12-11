@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ecobazar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="container header__top">
+            <div class="burger__menu">
+                <a class="icon" href="">
+                    <img src="assets/icons/burger_menu.svg">
+                </a>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
+                    <span>Ecobazar</span>
+                </a>
+            </div>
+
+            <div class="header__search">
+                <input type="text" placeholder="Búsqueda de productos">
+                <button class="button">Buscar</button>
+            </div>
+
+            <div class="header__icons">
+                <a class="icon icon__search" href="">
+                    <img src="assets/icons/search.svg">
+                </a>
+                <a class="icon" href="">
+                    <img src="assets/icons/Cart.svg">
+                </a>
+                <a class="icon" href="">
+                    <img src="assets/icons/user_3 1.svg">
+                </a>
+            </div>
+        </div>
+
+        <nav class="header__nav">
+            <div class="container nav__inner">
+                <div class="nav__links">
+                    <a href="index.html" class="nav__link nav__link--active">Home</a>
+                    <a href="products.html" class="nav__link">Productos</a>
+                    <a href="contact.html" class="nav__link">Contacto</a>
+                    <a href="about.html" class="nav__link">Sobre nosotros</a>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!--Breadcrumbs-->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb__nav">
+                    <a href="index.html">
+                        <img src="assets/icons/home.svg">
+                    </a>
+                    <span>/</span>
+                    <a href="#">Frutas</a>
+                    <span>/</span>
+                    <span class="product__active">Manzana verde</span>
+                </nav>
+            </div>
+        </section>
+
+        <!--Product Info-->
+        <section class="product">
+            <div class="product__inner">
+                <div class="container grid grid-12">
+
+                    <!--Carrusel vertical-->
+                    <aside class="product__thumbs col-2">
+                        <button class="thumbs__arrow thumbs__arrow--up" aria-label="Anterior">❮</button>
+
+                        <div class="thumbs__list">
+                            <img src="assets/img/products/manzana.jpg" alt="thumb 1" class="thumb is-active">
+                            <img src="assets/img/products/apple2.jpg" alt="thumb 2" class="thumb">
+                        </div>
+
+                        <button class="thumbs__arrow thumbs__arrow--down" aria-label="Siguiente">❯</button>
+
+                    </aside>
+
+                    <!--Imagen producto-->
+                    <div class="product__media col-5">
+                        <img src="assets/img/products/apple2.jpg" alt="Manzana verde" class="product__image">
+                    </div>
+
+                    <!--Info producto-->
+                    <div class="product__info col-5">
+                        <!-- Nombre -->
+                        <h1 class="product__title">Manzana Verde</h1>
+
+                        <!-- Valoración -->
+                        <div class="product__rating">
+                            <span class="product__stars">★★★★★</span>
+                            <span class="product__reviews">2 Valoraciones</span>
+                        </div>
+
+                        <!-- Precio -->
+                        <div class="product__price">
+                            <span class="product__price--old">2,99€</span>
+                            <span class="product__price--current">1,99€</span>
+                            <span class="product__price--discount">64% Descuento</span>
+                        </div>
+
+                        <!-- Texto descripción corta -->
+                        <p class="product__excerpt">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                            himenaeos...
+                        </p>
+
+                        <!-- Cantidad + botón -->
+                        <div class="product__actions">
+                            <div class="product__qty">
+                                <button class="qty__btn qty__btn--minus" aria-label="Disminuir">−</button>
+                                <input type="text" class="qty__input" value="1" min="1">
+                                <button class="qty__btn qty__btn--plus" aria-label="Aumentar">+</button>
+                            </div>
+
+                            <button class="btn btn--primary product__add-to-cart">
+                                Añadir al carrito
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Tabs-->
+        <section class="product-details">
+            <div class="container">
+
+                <!-- Desplegable 1: Descripción -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Descripción</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+                        <p>
+                            Aquí va el texto de descripción completa del producto...
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desplegable 2: Información adicional -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Información adicional</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+                        <p>
+                            Valores nutricionales, procedencia, cultivo, etc.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desplegable 3: Valoraciones -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Valoraciones</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+
+                        <!-- Ejemplo comentario -->
+                        <div class="review">
+                            <div class="review__header">
+                                <strong>Jane Cooper</strong>
+                                <span class="review__date">30 Apr, 2021</span>
+                            </div>
+                            <p class="review__text">
+                                Keep the soil evenly moist for the healthiest growth...
+                            </p>
+                        </div>
+
+                        <!-- Más reviews aquí -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="logo">
+                        <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
+                        <span>Ecobazar</span>
+                    </div>
+
+                    <p>
+                        Mercado ecológico con los mejores productos frescos. 100% natural.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Mi Perfil</h4>
+                    <ul>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Carrito</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Términos & Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Tienda</a></li>
+                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="footer__bottom">
+                <span>Ecobazar © 2025 - Todos los derechos reservados</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+
+</html>

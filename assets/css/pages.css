@@ -1,0 +1,312 @@
+/* PRODUCT*/
+
+/*Breadcrumb*/
+.breadcrumb {
+    font-size: 14px;
+}
+
+.breadcrumb__nav {
+    color: var(--color-gray-400);
+}
+
+.breadcrumb__nav img {
+    width: 12px;
+    height: 12px;
+}
+
+.product__active {
+    color: var(--color-primary);
+}
+
+.product {
+    background-color: var(--color-white);
+}
+
+/* Desktop: alineamos verticalmente */
+@media (min-width: 768px) {
+    .product__inner .grid-12 {
+        align-items: flex-start;
+        gap: 32px;
+    }
+}
+
+/*PRODUCT INFO*/
+/* Columna de miniaturas */
+
+.product__thumbs {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.thumbs__list {
+    flex-direction: row;
+    text-align: center;
+}
+
+.thumb {
+    width: 20%;
+}
+
+.thumbs__arrow {
+    display: block;
+    background: none;
+    border: 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: #6b7280;
+
+}
+
+/*Desktop*/
+@media (min-width: 768px) {
+    .product__thumbs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    /* Flechas arriba y abajo */
+    .thumbs__arrow {
+        background: none;
+        border: 0;
+        font-size: 20px;
+        cursor: pointer;
+        color: #6b7280;
+    }
+
+    /* Lista vertical */
+    .thumbs__list {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Miniatura */
+
+    .thumb {
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        border: 1px solid #e5e7eb;
+        padding: 4px;
+        cursor: pointer;
+    }
+
+    /* Miniatura activa */
+    .thumb.is-active {
+        border-color: #22c55e;
+        background: #f0fdf4;
+    }
+
+    
+}
+
+/* Contenedor de la imagen principal */
+.product__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+
+/* Imagen principal */
+.product__image {
+    width: 100%;
+    height: auto;
+}
+
+/*INFO PRODUCT*/
+.product__info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.product__title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.product__rating {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.product__stars {
+    color: #facc15;
+}
+
+.product__price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 18px;
+}
+
+.product__price--old {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.product__price--current {
+    font-weight: 600;
+    color: #16a34a;
+}
+
+.product__price--discount {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.product__excerpt {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Cantidad + botón */
+.product__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.product__qty {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.qty__btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+.qty__input {
+    width: 40px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+/* Botón principal genérico */
+.btn.btn--primary {
+    padding: 10px 24px;
+    border-radius: 999px;
+    border: none;
+    background: #22c55e;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+/* TABS */
+.product-details__tabs {
+    display: flex;
+    gap: 24px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.product-details__tab {
+    background: none;
+    border: 0;
+    padding: 12px 0;
+}
+
+.product-details__tab.is-active {
+    border-bottom: 2px solid #22c55e;
+}
+
+/* paneles; luego ya los mostraremos/ocultaremos con JS */
+.product-details__panel {
+    padding-top: 24px;
+    display: none;
+}
+
+.product-details__panel.is-active {
+    display: block;
+}
+
+/* CONTENEDOR */
+.product-details {
+    padding-block: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* CADA BLOQUE DEL ACORDEÓN */
+.accordion {
+    border-bottom: 1px solid #e5e7eb;
+    padding-block: 12px;
+}
+
+/* HEADER DEL ACORDEÓN */
+.accordion__header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* ICONO + / – */
+.accordion__icon {
+    font-size: 22px;
+    transition: transform 0.2s;
+}
+
+/* CONTENIDO OCULTO POR DEFECTO */
+.accordion__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+    padding-right: 8px;
+}
+
+/* ACTIVO */
+.accordion__header[aria-expanded="true"] + .accordion__content {
+    padding-top: 12px;
+}
+
+/* Giramos icono en abierto */
+.accordion__header[aria-expanded="true"] .accordion__icon {
+    transform: rotate(45deg); /* de + a x */
+}
+
+/* REVIEW */
+.review {
+    margin-bottom: 20px;
+}
+
+.review__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.review__text {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #6b7280;
+}
