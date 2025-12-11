@@ -1,3 +1,7 @@
+/*Banner*/ 
+
+
+/*Products */
 const mainImg = document.querySelector('.product__image');
 const thumbs = document.querySelectorAll('.thumb');
 
