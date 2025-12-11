@@ -162,47 +162,133 @@ input {
 
 
 /*Banner */
-.hero__inner {
-    display: flex;
-    padding-block: 12px;
-}
-
 .hero {
-    background-image: url("assets/img/banner/cesta.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
+    background-color: var(--color-gray-50);
 }
 
-.hero__image {
-    width: 742px;
-    height: 498px;
+.hero__inner {
+    padding-block: 24px 40px;
+    position: relative;
 }
 
+.hero__slider {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+/* Cada slide ocupa el 100% del ancho */
+.hero__slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+}
+
+.hero__image img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+/* Texto mobile */
 .hero__title {
-    width: 596px;
     color: var(--color-gray-900);
-    font-size: 60px;
-    font-weight: 600;
-    font-style: normal;
+    font-size: 28px;
     line-height: 120%;
 }
 
 .hero__subtitle {
     color: var(--color-gray-900);
-    font-size: 25px;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 16px;
     line-height: 120%;
+    margin-top: 8px;
 }
 
 .hero__highlight {
     color: var(--color-warning);
-    font-size: 32px;
     font-weight: 600;
-    font-style: normal;
-    line-height: 120%;
 }
+
+/* Flechas */
+.hero__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    background: var(--color-white);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    z-index: 10;            
+    pointer-events: auto;   
+}
+
+.hero__arrow--left {
+    left: 8px;
+}
+
+.hero__arrow--right {
+    right: 8px;
+}
+
+/* Dots */
+.hero__dots {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.hero__dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    border: none;
+    background: var(--color-gray-300);
+    cursor: pointer;
+}
+
+.hero__dot--active {
+    width: 16px;
+    background: var(--color-primary);
+}
+
+@media (min-width: 768px) {
+    .hero__inner {
+        padding-block: 40px 80px;
+    }
+
+    .hero__slide {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero__image img {
+        max-width: 480px;
+    }
+
+    .hero__title {
+        font-size: 60px;
+        width: 596px;
+    }
+
+    .hero__subtitle {
+        font-size: 25px;
+    }
+}
+
 
 /*Categories*/
 .categories {

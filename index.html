@@ -27,7 +27,7 @@
                     <img src="assets/icons/burger_menu.svg">
                 </a>
             </div>
-            
+
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
@@ -72,39 +72,57 @@
         <section class="hero">
             <div class="hero__inner">
                 <div class="container">
-                    
+
                     <!-- Flecha izq -->
                     <button class="hero__arrow hero__arrow--left" aria-label="Anterior">❮</button>
 
-                    <!-- Imagen cesta -->
-                    <div class="hero__image">
-                        <img src="" alt="Cesta de vegetales">
-                    </div>
+                    <!-- Track del carrusel -->
+                    <div class="hero__slider">
 
-                    <!-- Texto -->
-                    <div class="hero__content">
-                        <div class="hero__title heading-01-600">Alimentos ecológicos</div>
-                        <div class="hero__subtitle body-xxl-400">
-                            Descuentos hasta el <span class="hero__highlight">30%</span>
-                        </div>
-                        <button class="button">
-                            Comprar
-                            <span class="hero__cta-icon">➜</span>
-                        </button>
-                    </div>
+                        <!-- SLIDE 1 (imagen + texto) -->
+                        <article class="hero__slide hero__slide--active">
+                            <div class="hero__image">
+                                <img src="assets/img/banner/cesta.png" alt="Cesta de vegetales">
+                            </div>
 
+                            <!-- Texto -->
+                            <div class="hero__content">
+                                <div class="hero__title heading-01-600">Alimentos ecológicos</div>
+                                <div class="hero__subtitle body-xxl-400">
+                                    Descuentos hasta el <span class="hero__highlight">30%</span>
+                                </div>
+                                <button class="button">
+                                    Comprar
+                                    <span class="hero__cta-icon">➜</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- SLIDE 2 (solo imagen o lo que quieras) -->
+                        <article class="hero__slide">
+                            <div class="hero__image">
+                                <img src="assets/img/banner/plato.png" alt="Frutas ecológicas">
+                            </div>
+                        </article>
+
+                        <!-- SLIDE 3 -->
+                        <article class="hero__slide">
+                            <div class="hero__image">
+                                <img src="assets/img/banner/huerto.jpg" alt="Verduras frescas">
+                            </div>
+                        </article>
+
+                    </div>
                     <!-- Flecha dcha -->
                     <button class="hero__arrow hero__arrow--right" aria-label="Siguiente">❯</button>
 
                     <!-- Dots -->
                     <div class="hero__dots">
-                        <span class="hero__dot hero__dot--active"></span>
-                        <span class="hero__dot"></span>
-                        <span class="hero__dot"></span>
+                        <button class="hero__dot hero__dot--active" aria-label="Ir al slide 1"></button>
+                        <button class="hero__dot" aria-label="Ir al slide 2"></button>
+                        <button class="hero__dot" aria-label="Ir al slide 3"></button>
                     </div>
-
                 </div>
-            </div>
         </section>
 
         <!--Categories-->
@@ -214,7 +232,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/acelga.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -242,7 +260,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/berenjena.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -270,7 +288,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/caqui.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -298,7 +316,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/coliflor.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -326,7 +344,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/lechuga.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -354,7 +372,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -382,7 +400,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/pimverde (2).jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -410,7 +428,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/tomatoes.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -438,7 +456,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/potatos.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -505,7 +523,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/tomatoes.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -533,7 +551,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/orange.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -561,7 +579,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/pimrojo.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -589,7 +607,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Manzana verde"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
