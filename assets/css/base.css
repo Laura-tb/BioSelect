@@ -48,7 +48,7 @@
 
 }
 
-
+/*Mobile first*/
 /* Reset básico */
 *,
 *::before,
@@ -64,12 +64,11 @@ body {
     margin: 0;
     font-family: var(--font-family);
     line-height: 1.5;
-    color: #111827;
+    color: var(--color-gray-900);
     background-color: #f9fafb;
     font-size: 12px;
 }
 
-/* Quita estilos raros */
 h1,
 h2,
 h3,
@@ -90,15 +89,72 @@ a {
 }
 
 
-
-/* Contenedor general 
 .container {
     max-width: 1200px;
     margin-inline: auto;
     padding-inline: 16px;
-}*/
+}
 
-/* Secciones base */
 section {
     padding-block: 40px;
+}
+
+
+/*Desktop*/
+@media (min-width: 768px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding-inline: 16px;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-1 {
+        grid-column: span 1;
+    }
+
+    .col-2 {
+        grid-column: span 2;
+    }
+
+    .col-3 {
+        grid-column: span 3;
+    }
+
+    .col-4 {
+        grid-column: span 4;
+    }
+
+    .col-5 {
+        grid-column: span 5;
+    }
+
+    .col-6 {
+        grid-column: span 6;
+    }
+
+    .col-7 {
+        grid-column: span 7;
+    }
+
+    .col-8 {
+        grid-column: span 8;
+    }
+
+    .col-9 {
+        grid-column: span 9;
+    }
+
+    .col-10 {
+        grid-column: span 10;
+    }
+
+    .col-11 {
+        grid-column: span 11;
+    }
+
+    .col-12 {
+        grid-column: span 12;
+    }
 }

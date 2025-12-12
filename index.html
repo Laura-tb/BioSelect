@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Ecobazar</title>
+    <title>BioSelect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Font -->
@@ -22,16 +22,19 @@
     <header class="header">
 
         <div class="container header__top">
+
             <div class="burger__menu">
-                <a class="icon" href="">
-                    <img src="assets/icons/burger_menu.svg">
-                </a>
+                <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+                    <span class="nav__toggle__line"></span>
+                    <span class="nav__toggle__line"></span>
+                    <span class="nav__toggle__line"></span>
+                </button>
             </div>
-            
+
             <div class="logo">
                 <a href="index.html">
-                    <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
-                    <span>Ecobazar</span>
+                    <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
+                    <span>BioSelect</span>
                 </a>
             </div>
 
@@ -42,25 +45,28 @@
 
             <div class="header__icons">
                 <a class="icon icon__search" href="">
-                    <img src="assets/icons/search.svg">
+                    <img src="assets/icons/search1.svg">
+                </a>
+                <a class="icon icon__cart" href="">
+                    <img src="assets/icons/cart1.svg">
                 </a>
                 <a class="icon" href="">
-                    <img src="assets/icons/Cart.svg">
-                </a>
-                <a class="icon" href="">
-                    <img src="assets/icons/user_3 1.svg">
+                    <img src="assets/icons/user1.svg">
                 </a>
             </div>
         </div>
 
-        <nav class="header__nav">
+        <nav class="header__nav" aria-label="Principal">
             <div class="container nav__inner">
-                <div class="nav__links">
-                    <a href="index.html" class="nav__link nav__link--active">Home</a>
-                    <a href="products.html" class="nav__link">Productos</a>
-                    <a href="contact.html" class="nav__link">Contacto</a>
-                    <a href="about.html" class="nav__link">Sobre nosotros</a>
-                </div>
+
+                <nav class="main__nav" id="site-nav" aria-label="Principal">
+                    <ul class="nav__links">
+                        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="products.html" class="nav__link">Productos</a></li>
+                        <li><a href="contact.html" class="nav__link">Contacto</a></li>
+                        <li><a href="about.html" class="nav__link">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
 
             </div>
         </nav>
@@ -69,41 +75,60 @@
 
     <main>
         <!--Banner-->
-        <section class="hero">
-            <div class="hero__inner">
+        <section class="banner">
+            <div class="banner__inner">
                 <div class="container">
+
                     <!-- Flecha izq -->
-                    <button class="hero__arrow hero__arrow--left" aria-label="Anterior">❮</button>
+                    <button class="banner__arrow banner__arrow--left" aria-label="Anterior">❮</button>
 
-                    <!-- Imagen cesta -->
-                    <div class="hero__image">
-                        <img src="" alt="Cesta de vegetales">
+                    <!-- Track del carrusel -->
+                    <div class="banner__slider">
+
+                        <!-- SLIDE 1 (imagen + texto) -->
+                        <article class="banner__slide banner__slide--active">
+                            <div class="banner__image">
+                                <img src="assets/img/banner/cesta.png" class="cesta"alt="Cesta de vegetales">
+                            </div>
+
+                            <!-- Texto -->
+                            <div class="banner__content">
+                                <div class="banner__title heading-01-600">Alimentos ecológicos</div>
+                                <div class="banner__subtitle body-xxl-400">
+                                    Descuentos hasta el <span class="banner__highlight">30%</span>
+                                </div>
+                                <button class="button">
+                                    Comprar
+                                    <span class="banner__cta-icon">➜</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <!-- SLIDE 2 (solo imagen o lo que quieras) -->
+                        <article class="banner__slide">
+                            <div class="banner__image">
+                                <img src="assets/img/banner/plato.png" alt="Frutas ecológicas">
+                            </div>
+                        </article>
+
+                        <!-- SLIDE 3 -->
+                        <article class="banner__slide">
+                            <div class="banner__image">
+                                <img src="assets/img/banner/huerto.jpg" alt="Verduras frescas">
+                            </div>
+                        </article>
+
                     </div>
-
-                    <!-- Texto -->
-                    <div class="hero__content">
-                        <div class="hero__title heading-01-600">Alimentos ecológicos</div>
-                        <div class="hero__subtitle body-xxl-400">
-                            Descuentos hasta el <span class="hero__highlight">30%</span>
-                        </div>
-                        <button class="button">
-                            Comprar
-                            <span class="hero__cta-icon">➜</span>
-                        </button>
-                    </div>
-
                     <!-- Flecha dcha -->
-                    <button class="hero__arrow hero__arrow--right" aria-label="Siguiente">❯</button>
+                    <button class="banner__arrow banner__arrow--right" aria-label="Siguiente">❯</button>
 
                     <!-- Dots -->
-                    <div class="hero__dots">
-                        <span class="hero__dot hero__dot--active"></span>
-                        <span class="hero__dot"></span>
-                        <span class="hero__dot"></span>
+                    <div class="banner__dots">
+                        <button class="banner__dot banner__dot--active" aria-label="Ir al slide 1"></button>
+                        <button class="banner__dot" aria-label="Ir al slide 2"></button>
+                        <button class="banner__dot" aria-label="Ir al slide 3"></button>
                     </div>
-
                 </div>
-            </div>
         </section>
 
         <!--Categories-->
@@ -188,12 +213,12 @@
                 <div class="sales__grid col-12">
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Manzana</h4>
+                                    <h5 class="sales__price">0,42€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -213,40 +238,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/acelga.jpg" alt="Acelgas"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
-                                </div>
-                                <div class="sales__rating">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_grey.svg">
-                                </div>
-
-                            </div>
-                            <div class="sales__button">
-                                <button class="button__cart">
-                                    <img src="assets/icons/Bag.svg">
-                                </button>
-                            </div>
-                        </div>
-
-
-
-                    </article>
-
-                    <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
-                        <div class="sales__item__bottom">
-                            <div class="sales__productInfo">
-                                <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Acelgas</h4>
+                                    <h5 class="sales__price">2,15€</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -269,12 +266,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/berenjena.jpg" alt="Berenjena"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Berenjena</h4>
+                                    <h5 class="sales__price">0,74€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -297,12 +294,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/caqui.jpg" alt="Caqui"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Caqui</h4>
+                                    <h5 class="sales__price">0,58€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -325,12 +322,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/coliflor.jpg" alt="Coliflor"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Coliflor</h4>
+                                    <h5 class="sales__price">2,62€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -353,12 +350,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/lechuga.jpg" alt="Escarola"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Escarola</h4>
+                                    <h5 class="sales__price">1,94€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -381,12 +378,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Maíz"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Maíz</h4>
+                                    <h5 class="sales__price">1,55€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -409,12 +406,13 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/pimverde (2).jpg" alt="Pimiento verde">
+                        </div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Pimiento verde</h4>
+                                    <h5 class="sales__price">0,73€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -437,12 +435,40 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Tomate</h4>
+                                    <h5 class="sales__price">0,53€/ud</h5>
+                                </div>
+                                <div class="sales__rating">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_orange.svg">
+                                    <img src="assets/icons/star_grey.svg">
+                                </div>
+
+                            </div>
+                            <div class="sales__button">
+                                <button class="button__cart">
+                                    <img src="assets/icons/Bag.svg">
+                                </button>
+                            </div>
+                        </div>
+
+
+
+                    </article>
+
+                    <article class="sales__item">
+                        <div class="sales__img"><img src="assets/img/products/potatos.jpg" alt="Patata"></div>
+                        <div class="sales__item__bottom">
+                            <div class="sales__productInfo">
+                                <div class="sales__info">
+                                    <h4 class="sales__name">Patata</h4>
+                                    <h5 class="sales__price">0,44€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -474,14 +500,14 @@
                     <h2>Productos destacados</h2>
                 </header>
 
-                <div class="sales__grid col-12">
+                <div class="featured__grid col-12">
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Manzana</h4>
+                                    <h5 class="sales__price">0,42€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -504,12 +530,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Tomate</h4>
+                                    <h5 class="sales__price">0,53€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -532,12 +558,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/orange1.jpg" alt="Naranja"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Naranja</h4>
+                                    <h5 class="sales__price">0,52€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -560,12 +586,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/pimrojo.jpg" alt="Pimiento rojo"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Pimiento rojo</h4>
+                                    <h5 class="sales__price">0,99€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -588,12 +614,12 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana verde"></div>
+                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Maiz"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana verde</h4>
-                                    <h5 class="sales__price">1,99€</h5>
+                                    <h4 class="sales__name">Maiz</h4>
+                                    <h5 class="sales__price">1,55€/ud</h5>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -624,8 +650,8 @@
             <div class="footer__top">
                 <div class="footer__left">
                     <div class="logo">
-                        <img src="assets/icons/plant 1.svg" alt="Ecobazar logo">
-                        <span>Ecobazar</span>
+                        <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
+                        <span>BioSelect</span>
                     </div>
 
                     <p>
@@ -661,7 +687,7 @@
             </div>
 
             <div class="footer__bottom">
-                <span>Ecobazar © 2025 - Todos los derechos reservados</span>
+                <span>BioSelect © 2025 - Todos los derechos reservados</span>
             </div>
         </div>
 
