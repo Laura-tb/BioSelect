@@ -1,94 +1,8 @@
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding-inline: 16px;
-}
-
-/*Mobile*/
+/*Mobile first*/
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 16px;
-}
-
-.header__search,
-.header__nav {
-    display: none;
-}
-
-/*Desktop*/
-@media (min-width: 768px) {
-    .grid-12 {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 24px;
-    }
-
-    .container {
-        max-width: 1320px;
-        margin: 0 auto;
-        padding-inline: 16px;
-    }
-
-    .icon__search,
-    .burger__menu {
-        display: none;
-    }
-
-    .header__search,
-    .header__nav {
-        display: block;
-    }
-}
-
-@media (min-width: 768px) {
-    .col-1 {
-        grid-column: span 1;
-    }
-
-    .col-2 {
-        grid-column: span 2;
-    }
-
-    .col-3 {
-        grid-column: span 3;
-    }
-
-    .col-4 {
-        grid-column: span 4;
-    }
-
-    .col-5 {
-        grid-column: span 5;
-    }
-
-    .col-6 {
-        grid-column: span 6;
-    }
-
-    .col-7 {
-        grid-column: span 7;
-    }
-
-    .col-8 {
-        grid-column: span 8;
-    }
-
-    .col-9 {
-        grid-column: span 9;
-    }
-
-    .col-10 {
-        grid-column: span 10;
-    }
-
-    .col-11 {
-        grid-column: span 11;
-    }
-
-    .col-12 {
-        grid-column: span 12;
-    }
 }
 
 /*Header*/
@@ -127,39 +41,112 @@ input {
     border: 1px solid var(--color-gray-100);
 }
 
-.icon img{
-    width:40px;
+.icon img {
+    width: 40px;
     height: 25px;
-    color:var(--color-gray-900); 
 }
 
-.icon a:hover{
-    cursor:pointer;
-    color:var(--color-primary);
+.icon a:hover {
+    cursor: pointer;
+    color: var(--color-primary);
 
 }
+
 .header__nav {
     background-color: var(--color-white);
+    position: relative;
 }
 
-.nav__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    padding-block: 12px;
+/* Menú oculto por defecto en mobile */
+.header__search {
+    display: none;
 }
 
+.burger__menu,
+.header__nav {
+    display: block;
+}
+
+.main__nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background: var(--color-white);
+    border-top: 1px solid #e5e7eb;
+    padding: 12px 0;
+}
+
+.main__nav.is-open {
+    display: block;
+}
 
 .nav__links {
     display: flex;
-    gap: 27px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 16px;
 }
 
 .nav__links a:hover {
     color: var(--color-primary);
 }
 
+/* Botón burger */
+.nav__toggle {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.nav__toggle__line {
+    width: 18px;
+    height: 2px;
+    background: #111827;
+}
+
+/* ===== DESKTOP ===== */
+/* En desktop: oculto burger y muestro menú inline */
+@media (min-width: 768px) {    
+    .main__nav {
+        display: block;
+        position: static;
+        border-top: 0;
+        background: transparent;
+    }
+
+    .nav__links {
+        flex-direction: row;
+        gap: 27px;
+        padding: 0;
+    }
+
+    .grid-12 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+    }
+
+    .icon__search,
+    .burger__menu {
+        display: none;
+    }
+
+    .header__search, 
+    .header__nav {
+        display: block;
+    }
+}
 
 /*Banner */
 .hero {
@@ -222,14 +209,14 @@ input {
     border-radius: 999px;
     border: none;
     background: var(--color-white);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
 
-    z-index: 10;            
-    pointer-events: auto;   
+    z-index: 10;
+    pointer-events: auto;
 }
 
 .hero__arrow--left {
