@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BioSelect</title>
+    <title>Manzana verde</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Google Font -->
@@ -23,7 +23,7 @@
         <div class="container header__top">
 
             <div class="burger__menu">
-                <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+                <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                     <span class="nav__toggle__line"></span>
                     <span class="nav__toggle__line"></span>
                     <span class="nav__toggle__line"></span>
@@ -43,25 +43,25 @@
             </div>
 
             <div class="header__icons">
-                <a class="icon icon__search" href="">
-                    <img src="assets/icons/search1.svg">
+                <a class="icon icon__search" href="#">
+                    <img src="assets/icons/search1.svg" alt="Buscar producto">
                 </a>
-                <a class="icon icon__cart" href="">
-                    <img src="assets/icons/cart1.svg">
+                <a class="icon icon__cart" href="#">
+                    <img src="assets/icons/cart1.svg" alt="Carrito">
                 </a>
-                <a class="icon" href="">
-                    <img src="assets/icons/user1.svg">
+                <a class="icon" href="#">
+                    <img src="assets/icons/user1.svg" alt="Cuenta de usuario">
                 </a>
             </div>
         </div>
 
-        <nav class="header__nav" aria-label="Principal">
+        <nav class="header__nav" aria-label="Main">
             <div class="container nav__inner">
 
-                <nav class="main__nav" id="site-nav" aria-label="Principal">
+                <nav class="main__nav" id="site-nav" aria-label="Main">
                     <ul class="nav__links">
                         <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
-                        <li><a href="products.html" class="nav__link">Productos</a></li>
+                        <li><a href="#" class="nav__link">Productos</a></li>
                         <li><a href="contact.html" class="nav__link">Contacto</a></li>
                         <li><a href="about.html" class="nav__link">Sobre nosotros</a></li>
                     </ul>
@@ -78,7 +78,7 @@
             <div class="container">
                 <nav class="breadcrumb__nav">
                     <a href="index.html">
-                        <img src="assets/icons/home.svg">
+                        <img src="assets/icons/home.svg" alt="Inicio">
                     </a>
                     <span>/</span>
                     <a href="#">Frutas</a>
@@ -94,17 +94,21 @@
                 <div class="container grid grid-12">
 
                     <!--Carrusel vertical-->
-                    <aside class="product__thumbs col-2">
-                        <button class="thumbs__arrow thumbs__arrow--up" aria-label="Anterior">❮</button>
-
-                        <div class="thumbs__list">
-                            <img src="assets/img/products/manzana.jpg" alt="thumb 1" class="thumb is-active">
-                            <img src="assets/img/products/apple2.jpg" alt="thumb 2" class="thumb">
+                    <div class="product__thumbs col-2">
+                        <div class="product__button">
+                            <button class="thumbs__arrow thumbs__arrow--up" aria-label="Previous">❮</button>
                         </div>
 
-                        <button class="thumbs__arrow thumbs__arrow--down" aria-label="Siguiente">❯</button>
+                        <div class="thumbs__list">
+                            <img src="assets/img/products/apple1.jpg" alt="Manzana miniatura 1" class="thumb is-active">
+                            <img src="assets/img/products/apple2.jpg" alt="Manzana miniatura 2" class="thumb">
+                        </div>
 
-                    </aside>
+                        <div class="product__button">
+                            <button class="thumbs__arrow thumbs__arrow--down" aria-label="Next">❯</button>
+                        </div>
+
+                    </div>
 
                     <!--Imagen producto-->
                     <div class="product__media col-5">
@@ -124,23 +128,24 @@
 
                         <!-- Precio -->
                         <div class="product__price">
-                            <span class="product__price--old">2,99€</span>
-                            <span class="product__price--current">1,99€</span>
-                            <span class="product__price--discount">64% Descuento</span>
+                            <span class="product__price--current">0,29€</span>
+                            <span class="product__price--old">0,42€</span>
+
+                            <span class="product__price--discount">30% Descuento</span>
                         </div>
 
                         <!-- Texto descripción corta -->
-                        <p class="product__excerpt">
-                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                            himenaeos...
+                        <p class="product__description">
+                            Manzana verde fresca y crujiente, de sabor ligeramente ácido y muy refrescante, ideal para
+                            consumir sola o en recetas saludables.
                         </p>
 
                         <!-- Cantidad + botón -->
                         <div class="product__actions">
                             <div class="product__qty">
-                                <button class="qty__btn qty__btn--minus" aria-label="Disminuir">−</button>
+                                <button class="qty__btn qty__btn--minus" aria-label="Decrease">−</button>
                                 <input type="text" class="qty__input" value="1" min="1">
-                                <button class="qty__btn qty__btn--plus" aria-label="Aumentar">+</button>
+                                <button class="qty__btn qty__btn--plus" aria-label="Increase">+</button>
                             </div>
 
                             <button class="btn btn--primary product__add-to-cart">
@@ -166,7 +171,11 @@
                     </button>
                     <div class="accordion__content">
                         <p>
-                            Aquí va el texto de descripción completa del producto...
+                            La manzana verde se caracteriza por su textura firme y crujiente y su sabor equilibrado
+                            entre ácido y refrescante. Es una fruta muy versátil, perfecta para consumir al natural, en
+                            ensaladas, postres o como ingrediente en recetas saludables. Destaca por su alto contenido
+                            en agua y fibra, lo que la convierte en una opción ligera y saciante, ideal para el día a
+                            día.
                         </p>
                     </div>
                 </div>
@@ -179,7 +188,14 @@
                     </button>
                     <div class="accordion__content">
                         <p>
-                            Valores nutricionales, procedencia, cultivo, etc.
+                        <ul>
+                            <li>Procedencia: España</li>
+                            <li>Origen: Agricultura ecológica</li>
+                            <li>Variedad: Manzana verde (tipo Granny Smith)</li>
+                            <li>Temporada: Disponible todo el año.</li>
+                            <li>Conservación: Mantener en lugar fresco y seco. En refrigeración se conserva mejor su
+                                frescura.</li>
+                        </ul>
                         </p>
                     </div>
                 </div>
@@ -192,21 +208,28 @@
                     </button>
                     <div class="accordion__content">
 
-                        <!-- Ejemplo comentario -->
                         <div class="review">
                             <div class="review__header">
-                                <strong>Jane Cooper</strong>
-                                <span class="review__date">30 Apr, 2021</span>
+                                <strong>Pedro López</strong>
+                                <span class="review__date">16 Dic 2025</span>
                             </div>
                             <p class="review__text">
-                                Keep the soil evenly moist for the healthiest growth...
+                                “Muy fresca y crujiente, se nota la calidad. Perfecta para comer a cualquier hora.”
                             </p>
                         </div>
 
-                        <!-- Más reviews aquí -->
+                        <div class="review">
+                            <div class="review__header">
+                                <strong>Lucía González</strong>
+                                <span class="review__date">03 Jun 2025</span>
+                            </div>
+                            <p class="review__text">
+                                “Sabor ácido justo como me gusta. Aguanta muy bien varios días en la nevera.”
+                            </p>
+                        </div>
+
                     </div>
                 </div>
-
             </div>
         </section>
 
@@ -251,11 +274,10 @@
                     <h4>Navegación</h4>
                     <ul>
                         <li><a href="index.html">Tienda</a></li>
-                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="#">Productos</a></li>
                         <li><a href="about.html">Sobre nosotros</a></li>
                     </ul>
                 </div>
-
 
             </div>
 

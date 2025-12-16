@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Naranja</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="container header__top">
+
+            <div class="burger__menu">
+                <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+                    <span class="nav__toggle__line"></span>
+                    <span class="nav__toggle__line"></span>
+                    <span class="nav__toggle__line"></span>
+                </button>
+            </div>
+
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
+                    <span>BioSelect</span>
+                </a>
+            </div>
+
+            <div class="header__search">
+                <input type="text" placeholder="Búsqueda de productos">
+                <button class="button">Buscar</button>
+            </div>
+
+            <div class="header__icons">
+                <a class="icon icon__search" href="#">
+                    <img src="assets/icons/search1.svg" alt="Buscar producto">
+                </a>
+                <a class="icon icon__cart" href="#">
+                    <img src="assets/icons/cart1.svg" alt="Carrito">
+                </a>
+                <a class="icon" href="#">
+                    <img src="assets/icons/user1.svg" alt="Cuenta de usuario">
+                </a>
+            </div>
+        </div>
+
+        <nav class="header__nav" aria-label="Main">
+            <div class="container nav__inner">
+
+                <nav class="main__nav" id="site-nav" aria-label="Main">
+                    <ul class="nav__links">
+                        <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="#" class="nav__link">Productos</a></li>
+                        <li><a href="contact.html" class="nav__link">Contacto</a></li>
+                        <li><a href="about.html" class="nav__link">Sobre nosotros</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <!--Breadcrumbs-->
+        <section class="breadcrumb">
+            <div class="container">
+                <nav class="breadcrumb__nav">
+                    <a href="index.html">
+                        <img src="assets/icons/home.svg" alt="Inicio">
+                    </a>
+                    <span>/</span>
+                    <a href="#">Frutas</a>
+                    <span>/</span>
+                    <span class="product__active">Naranja</span>
+                </nav>
+            </div>
+        </section>
+
+        <!--Product Info-->
+        <section class="product">
+            <div class="product__inner">
+                <div class="container grid grid-12">
+
+                    <!--Carrusel vertical-->
+                    <div class="product__thumbs col-2">
+                        <div class="product__button">
+                            <button class="thumbs__arrow thumbs__arrow--up" aria-label="Previous">❮</button>
+                        </div>
+
+                        <div class="thumbs__list">
+                            <img src="assets/img/products/orange1.jpg" alt="Naranja miniatura 1" class="thumb is-active">
+                            <img src="assets/img/products/orange2.jpg" alt="Naranja miniatura 2" class="thumb">
+                        </div>
+
+                        <div class="product__button">
+                            <button class="thumbs__arrow thumbs__arrow--down" aria-label="Next">❯</button>
+                        </div>
+
+                    </div>
+
+                    <!--Imagen producto-->
+                    <div class="product__media col-5">
+                        <img src="assets/img/products/orange1.jpg" alt="Naranja" class="product__image">
+                    </div>
+
+                    <!--Info producto-->
+                    <div class="product__info col-5">
+                        <!-- Nombre -->
+                        <h1 class="product__title">Naranja</h1>
+
+                        <!-- Valoración -->
+                        <div class="product__rating">
+                            <span class="product__stars">★★★★★</span>
+                            <span class="product__reviews">1 Valoración</span>
+                        </div>
+
+                        <!-- Precio -->
+                        <div class="product__price">
+                            <span class="product__price--current">0,36€</span>
+                            <span class="product__price--old">0,52€</span>
+
+                            <span class="product__price--discount">30% Descuento</span>
+                        </div>
+
+                        <!-- Texto descripción corta -->
+                        <p class="product__description">
+                            Naranja fresca y jugosa, de sabor equilibrado entre dulce y ácido. Ideal para consumir al natural, en zumos o como ingrediente en recetas dulces y saladas. Rica en vitamina C y antioxidantes, contribuye a una alimentación saludable y refrescante.
+                        </p>
+
+                        <!-- Cantidad + botón -->
+                        <div class="product__actions">
+                            <div class="product__qty">
+                                <button class="qty__btn qty__btn--minus" aria-label="Decrease">−</button>
+                                <input type="text" class="qty__input" value="1" min="1">
+                                <button class="qty__btn qty__btn--plus" aria-label="Increase">+</button>
+                            </div>
+
+                            <button class="btn btn--primary product__add-to-cart">
+                                Añadir al carrito
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--Tabs-->
+        <section class="product-details">
+            <div class="container">
+
+                <!-- Desplegable 1: Descripción -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Descripción</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+                        <p>
+                            Naranja fresca de alta calidad, seleccionada por su jugosidad, aroma intenso y sabor equilibrado entre dulzor y un ligero toque ácido. Su pulpa es firme y rica en zumo, lo que la hace perfecta tanto para consumir en fresco como para preparar zumos naturales, postres, ensaladas o recetas saladas. Es una fruta muy apreciada por su alto contenido en vitamina C, fibra y antioxidantes, que ayudan a reforzar el sistema inmunológico y a mantener una dieta equilibrada. Ideal para disfrutar a diario por su frescura, versatilidad y valor nutricional.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desplegable 2: Información adicional -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Información adicional</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+                        <p>
+                        <ul>
+                            <li>Procedencia: España</li>
+                            <li>Origen: Agricultura ecológica</li>
+                            <li>Variedad: Naranja de mesa</li>
+                            <li>Temporada: De otoño a primavera.</li>
+                            <li>Conservación: Mantener en lugar fresco y seco. En refrigeración se conserva mejor su
+                                frescura.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Desplegable 3: Valoraciones -->
+                <div class="accordion">
+                    <button class="accordion__header" aria-expanded="false">
+                        <span>Valoraciones</span>
+                        <span class="accordion__icon">+</span>
+                    </button>
+                    <div class="accordion__content">
+
+                        <div class="review">
+                            <div class="review__header">
+                                <strong>Ana González</strong>
+                                <span class="review__date">16 Dic 2025</span>
+                            </div>
+                            <p class="review__text">
+                                “Naranjas de excelente calidad. Muy jugosas, con un sabor natural y equilibrado, nada ácidas. Se nota que son frescas y ecológicas. Las hemos usado tanto para zumo como para comer en fresco y han salido buenísimas. Repetiremos sin duda.”
+                            </p>
+                        </div>            
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <div class="logo">
+                        <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
+                        <span>BioSelect</span>
+                    </div>
+
+                    <p>
+                        Mercado ecológico con los mejores productos frescos. 100% natural.
+                    </p>
+                    <div class="logo social__media">
+                        <a href="#"><img src="assets/icons/icon_facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/icon_twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/icons/icon_instagram.svg" alt="Instagram"></a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <h4>Mi Perfil</h4>
+                    <ul>
+                        <li><a href="#">Pedidos</a></li>
+                        <li><a href="#">Carrito</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Términos & Condiciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Tienda</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__bottom">
+                <span>BioSelect © 2025 - Todos los derechos reservados</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+
+</html>
