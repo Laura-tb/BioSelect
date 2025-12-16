@@ -88,7 +88,7 @@
                         <!-- SLIDE 1 (imagen + texto) -->
                         <article class="banner__slide banner__slide--active">
                             <div class="banner__image">
-                                <img src="assets/img/banner/cesta.png" class="cesta"alt="Cesta de vegetales">
+                                <img src="assets/img/banner/cesta.png" class="cesta" alt="Cesta de vegetales">
                             </div>
 
                             <!-- Texto -->
@@ -140,7 +140,7 @@
 
                 <div class="categories__grid col-12">
 
-                    <article class="category">
+                    <article class="category category--featured">
                         <img src="assets/img/categories/frutas.jpg" alt="Frutas">
                         <h3 class="category__text">Frutas</h3>
                     </article>
@@ -212,13 +212,16 @@
 
                 <div class="sales__grid col-12">
 
-                    <article class="sales__item">
+                    <article class="sales__item sales__item--featured">
+                        <span class="sales__badge">-30%</span>
                         <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Manzana</h4>
-                                    <h5 class="sales__price">0,42€/ud</h5>
+                                    <h4 class="sales__name sales__name--featured">Manzana</h4>
+
+                                    <span class="sales__price sales__price--new">0,29€/ud</span>
+                                    <span class="sales__price sales__price--old">0,42€/ud</span>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -230,39 +233,11 @@
 
                             </div>
                             <div class="sales__button">
-                                <button class="button__cart">
-                                    <img src="assets/icons/Bag.svg">
+                                <button class="button__cart button__cart--primary" aria-label="Añadir al carrito">
+                                    <img src="assets/icons/Bag.svg" alt="">
                                 </button>
                             </div>
                         </div>
-                    </article>
-
-                    <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/acelga.jpg" alt="Acelgas"></div>
-                        <div class="sales__item__bottom">
-                            <div class="sales__productInfo">
-                                <div class="sales__info">
-                                    <h4 class="sales__name">Acelgas</h4>
-                                    <h5 class="sales__price">2,15€</h5>
-                                </div>
-                                <div class="sales__rating">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_orange.svg">
-                                    <img src="assets/icons/star_grey.svg">
-                                </div>
-
-                            </div>
-                            <div class="sales__button">
-                                <button class="button__cart">
-                                    <img src="assets/icons/Bag.svg">
-                                </button>
-                            </div>
-                        </div>
-
-
-
                     </article>
 
                     <article class="sales__item">
@@ -557,13 +532,17 @@
 
                     </article>
 
-                    <article class="sales__item">
+                    <article class="sales__item product__item--featured">
+                        <span class="sales__badge">-30%</span>
                         <div class="sales__img"><img src="assets/img/products/orange1.jpg" alt="Naranja"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name">Naranja</h4>
-                                    <h5 class="sales__price">0,52€/ud</h5>
+                                    <h4 class="sales__name sales__name--featured">Naranja</h4>
+                                    <div class="sales__price">
+                                        <span class="sales__price--new">0,36€/ud</span>
+                                        <span class="sales__price--old--featured">0,52€/ud</span>
+                                    </div>
                                 </div>
                                 <div class="sales__rating">
                                     <img src="assets/icons/star_orange.svg">
@@ -575,8 +554,8 @@
 
                             </div>
                             <div class="sales__button">
-                                <button class="button__cart">
-                                    <img src="assets/icons/Bag.svg">
+                                <button class="button__cart button__cart--primary" aria-label="Añadir al carrito">
+                                    <img src="assets/icons/Bag.svg" alt="">
                                 </button>
                             </div>
                         </div>
@@ -657,6 +636,11 @@
                     <p>
                         Mercado ecológico con los mejores productos frescos. 100% natural.
                     </p>
+                    <div class="logo social__media">
+                        <a href="#"><img src="assets/icons/icon_facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="assets/icons/icon_twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="assets/icons/icon_instagram.svg" alt="Instagram"></a>
+                    </div>
                 </div>
 
                 <div class="footer__links">
