@@ -1,6 +1,6 @@
 .button {
     border-radius: 6px;
-    background-color: var(--color-primary);
+    background-color: var(--color-primary-hard);
     border: none;
     justify-content: center;
     color: var(--color-white);

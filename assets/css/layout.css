@@ -157,7 +157,7 @@ input {
 
 .banner__slider {
     display: flex;
-    transition: transform 0.4s ease;
+    transition: transform 0.5s ease;
     width: 100%;
 }
 
@@ -173,6 +173,7 @@ input {
     border-radius: 16px;
     overflow: hidden;
     background: #f3f4f6;
+    position: relative;
 }
 
 .banner__image img {
@@ -209,6 +210,28 @@ input {
 .banner__highlight {
     color: var(--color-warning);
     font-weight: 600;
+}
+
+.banner__slide--overlay {
+    position: relative;
+}
+
+.banner__slide--overlay .banner__content {
+    position: absolute;
+    top: 30%;
+    left: 44px;
+    transform: translateY(-50%);
+    text-align: left;
+
+    max-width: 35%;
+    margin: 0;
+    z-index: 2;
+}
+
+.banner__slide--overlay .banner__title,
+.banner__slide--overlay .banner__subtitle {
+    color: var(--color-white);
+    font-size: 18px;
 }
 
 /* Flechas */
@@ -277,11 +300,10 @@ input {
         height: 340px;
     }
 
-    /* SLIDE 1: texto + imagen lado a lado */
+    /* SLIDE 1 */
     .banner__slide:first-child {
         display: grid;
         grid-template-columns: 1fr 1.1fr;
-        /* texto / imagen */
         align-items: center;
         gap: 32px;
         text-align: left;
@@ -291,7 +313,7 @@ input {
         object-fit: contain;
     }
 
-    /* el resto de slides: solo imagen centrada */
+    /* Resto de slides */
     .hero__slide:not(:first-child) {
         display: flex;
         align-items: center;
@@ -324,6 +346,16 @@ input {
         right: 16px;
     }
 
+    .banner__slide--overlay .banner__content {
+        left: 85px;
+        max-width: 40%;
+        top: 45%;
+    }
+
+    .banner__slide--overlay .banner__title,
+    .banner__slide--overlay .banner__subtitle {
+        font-size: 28px;
+    }
 }
 
 
@@ -373,6 +405,7 @@ input {
     font-style: normal;
     font-weight: 500;
     line-height: 150%;
+    font-size: 1em;
 }
 
 .category--featured {
@@ -437,14 +470,14 @@ input {
 }
 
 .sales__name {
-    color: var(--color-gray-700);
+    color: var(--color-gray-900);
     font-weight: 400;
     line-height: 150%;
 }
 
 .sales__price {
     color: var(--color-gray-900);
-    font-size: 16px;
+    font-size: 0.9em;
     font-weight: 500;
     display: flex;
     align-items: flex-start;
@@ -474,6 +507,25 @@ input {
     justify-content: space-between;
     padding: 10px;
 }
+
+@media(min-width: 768px) {
+
+    .sales__item--featured,
+    .product__item--featured {
+        transition:
+            transform .25s ease,
+            box-shadow .25s ease,
+            border-color .25s ease;
+    }
+
+    .sales__item--featured:hover,
+    .product__item--featured:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 28px var(--color-primary-soft);
+
+    }
+}
+
 
 /*Producto en oferta destacado*/
 .sales__item--featured {
@@ -508,7 +560,7 @@ input {
 }
 
 .sales__name--featured {
-    color: var(--color-gray-700);
+    color: var(--color-gray-900);
     font-weight: 600;
     line-height: 150%;
     font-size: 20px;
@@ -519,7 +571,7 @@ input {
     align-items: baseline;
     gap: 8px;
     margin-top: 2px;
-    
+
 }
 
 .sales__price--new {
@@ -536,7 +588,7 @@ input {
 }
 
 .button__cart--primary {
-    background: var(--color-primary);
+    background: var(--color-primary-hard);
 }
 
 .button__cart--primary:hover {
@@ -578,12 +630,13 @@ input {
     border: 1px solid var(--color-primary-soft);
     box-shadow: 3px 2px 16px var(--color-primary-soft);
 }
+
 .sales__price--old--featured {
     color: var(--color-gray-400);
     text-decoration: line-through;
     font-weight: 400;
     font-size: 16px;
-    margin:auto;
+    margin: auto;
 }
 
 .sales__badge {

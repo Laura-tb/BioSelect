@@ -24,7 +24,7 @@
         <div class="container header__top">
 
             <div class="burger__menu">
-                <button class="nav__toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+                <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                     <span class="nav__toggle__line"></span>
                     <span class="nav__toggle__line"></span>
                     <span class="nav__toggle__line"></span>
@@ -44,25 +44,25 @@
             </div>
 
             <div class="header__icons">
-                <a class="icon icon__search" href="">
-                    <img src="assets/icons/search1.svg">
+                <a class="icon icon__search" href="#">
+                    <img src="assets/icons/search1.svg" alt="Buscar producto">
                 </a>
-                <a class="icon icon__cart" href="">
-                    <img src="assets/icons/cart1.svg">
+                <a class="icon icon__cart" href="#">
+                    <img src="assets/icons/cart1.svg" alt="Carrito">
                 </a>
-                <a class="icon" href="">
-                    <img src="assets/icons/user1.svg">
+                <a class="icon" href="#">
+                    <img src="assets/icons/user1.svg" alt="Cuenta de usuario">
                 </a>
             </div>
         </div>
 
-        <nav class="header__nav" aria-label="Principal">
+        <nav class="header__nav" aria-label="Main">
             <div class="container nav__inner">
 
-                <nav class="main__nav" id="site-nav" aria-label="Principal">
+                <nav class="main__nav" id="site-nav" aria-label="Main">
                     <ul class="nav__links">
                         <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
-                        <li><a href="products.html" class="nav__link">Productos</a></li>
+                        <li><a href="#" class="nav__link">Productos</a></li>
                         <li><a href="contact.html" class="nav__link">Contacto</a></li>
                         <li><a href="about.html" class="nav__link">Sobre nosotros</a></li>
                     </ul>
@@ -79,19 +79,17 @@
             <div class="banner__inner">
                 <div class="container">
 
-                    <!-- Flecha izq -->
-                    <button class="banner__arrow banner__arrow--left" aria-label="Anterior">❮</button>
+                    <!-- <button class="banner__arrow banner__arrow--left" aria-label="Previous">❮</button> -->
 
-                    <!-- Track del carrusel -->
+                    <!-- Carrusel -->
                     <div class="banner__slider">
 
-                        <!-- SLIDE 1 (imagen + texto) -->
+                        <!-- SLIDE 1 -->
                         <article class="banner__slide banner__slide--active">
                             <div class="banner__image">
-                                <img src="assets/img/banner/cesta.png" class="cesta" alt="Cesta de vegetales">
+                                <img src="assets/img/banner/basket.png" class="cesta" alt="Cesta de vegetales">
                             </div>
 
-                            <!-- Texto -->
                             <div class="banner__content">
                                 <div class="banner__title heading-01-600">Alimentos ecológicos</div>
                                 <div class="banner__subtitle body-xxl-400">
@@ -104,30 +102,43 @@
                             </div>
                         </article>
 
-                        <!-- SLIDE 2 (solo imagen o lo que quieras) -->
-                        <article class="banner__slide">
+                        <!-- SLIDE 2 -->
+                        <article class="banner__slide banner__slide--overlay">
                             <div class="banner__image">
-                                <img src="assets/img/banner/plato.png" alt="Frutas ecológicas">
+                                <img src="assets/img/banner/plate.png" alt="Frutas ecológicas">
+                            </div>
+
+                            <div class="banner__content">
+                                <div class="banner__title heading-01-600">Come mejor cada día.</div>
+                                <div class="banner__subtitle body-xxl-400">
+                                    Del campo a la mesa.
+                                </div>
                             </div>
                         </article>
 
                         <!-- SLIDE 3 -->
                         <article class="banner__slide">
                             <div class="banner__image">
-                                <img src="assets/img/banner/huerto.jpg" alt="Verduras frescas">
+                                <img src="assets/img/banner/garden.jpg" alt="Verduras frescas">
+                            </div>
+
+                            <div class="banner__content">
+                                <div class="banner__title heading-01-600">Directo del huerto</div>
+                                <div class="banner__subtitle body-xxl-400">
+                                    Producto fresco
+                                </div>
                             </div>
                         </article>
-
                     </div>
-                    <!-- Flecha dcha -->
-                    <button class="banner__arrow banner__arrow--right" aria-label="Siguiente">❯</button>
+
+                    <!-- <button class="banner__arrow banner__arrow--right" aria-label="Next">❯</button> -->
 
                     <!-- Dots -->
                     <div class="banner__dots">
-                        <button class="banner__dot banner__dot--active" aria-label="Ir al slide 1"></button>
-                        <button class="banner__dot" aria-label="Ir al slide 2"></button>
-                        <button class="banner__dot" aria-label="Ir al slide 3"></button>
-                    </div>
+                        <button class="banner__dot banner__dot--active" aria-label="Go to slide 1"></button>
+                        <button class="banner__dot" aria-label="Go to slide 2"></button>
+                        <button class="banner__dot" aria-label="Go to slide 3"></button>
+                    </div> 
                 </div>
         </section>
 
@@ -141,17 +152,17 @@
                 <div class="categories__grid col-12">
 
                     <article class="category category--featured">
-                        <img src="assets/img/categories/frutas.jpg" alt="Frutas">
+                        <img src="assets/img/categories/fruits.jpg" alt="Frutas">
                         <h3 class="category__text">Frutas</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/hortalizas.jpg" alt="Hortalizas">
+                        <img src="assets/img/categories/vegetables.jpg" alt="Hortalizas">
                         <h3 class="category__text">Hortalizas</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/carne.jpg" alt="Carne y pescado">
+                        <img src="assets/img/categories/meat.jpg" alt="Carne y pescado">
                         <h3 class="category__text">Carne y pescado</h3>
                     </article>
 
@@ -161,42 +172,42 @@
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/bebidas.jpg" alt="Bebidas">
+                        <img src="assets/img/categories/beverages.jpg" alt="Bebidas">
                         <h3 class="category__text">Bebidas</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/higiene.jpg" alt="Higiene personal">
+                        <img src="assets/img/categories/hygiene.jpg" alt="Higiene personal">
                         <h3 class="category__text">Higiene personal</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/bolleria.jpg" alt="Bolleria">
+                        <img src="assets/img/categories/bakery.jpg" alt="Bolleria">
                         <h3 class="category__text">Bollería</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/desayuno.jpg" alt="Desayuno">
+                        <img src="assets/img/categories/breakfast.jpg" alt="Desayuno">
                         <h3 class="category__text">Desayuno</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/despensa.jpg" alt="Despensa">
+                        <img src="assets/img/categories/pantry.jpg" alt="Despensa">
                         <h3 class="category__text">Despensa</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/complementos.jpg" alt="Complementos">
+                        <img src="assets/img/categories/supplements.jpg" alt="Complementos">
                         <h3 class="category__text">Complementos</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/limpieza.jpg" alt="Limpieza">
+                        <img src="assets/img/categories/cleaning.jpg" alt="Limpieza">
                         <h3 class="category__text">Limpieza</h3>
                     </article>
 
                     <article class="category">
-                        <img src="assets/img/categories/aceite.jpg" alt="Aceite">
+                        <img src="assets/img/categories/oil.jpg" alt="Aceite">
                         <h3 class="category__text">Aceite</h3>
                     </article>
                 </div>
@@ -214,11 +225,17 @@
 
                     <article class="sales__item sales__item--featured">
                         <span class="sales__badge">-30%</span>
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana"></div>
+                        <div class="sales__img">
+                            <a href="apple_product.html">
+                                <img src="assets/img/products/apple1.jpg" alt="Manzana">
+                            </a>
+                        </div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name sales__name--featured">Manzana</h4>
+                                    <a href="apple_product.html">
+                                        <h4 class="sales__name sales__name--featured">Manzana</h4>
+                                    </a>
 
                                     <span class="sales__price sales__price--new">0,29€/ud</span>
                                     <span class="sales__price sales__price--old">0,42€/ud</span>
@@ -240,8 +257,9 @@
                         </div>
                     </article>
 
+
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/berenjena.jpg" alt="Berenjena"></div>
+                        <div class="sales__img"><img src="assets/img/products/eggplant.jpg" alt="Berenjena"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -269,7 +287,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/caqui.jpg" alt="Caqui"></div>
+                        <div class="sales__img"><img src="assets/img/products/persimmon.jpg" alt="Caqui"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -297,7 +315,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/coliflor.jpg" alt="Coliflor"></div>
+                        <div class="sales__img"><img src="assets/img/products/cauliflower.jpg" alt="Coliflor"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -325,7 +343,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/lechuga.jpg" alt="Escarola"></div>
+                        <div class="sales__img"><img src="assets/img/products/lettuce.jpg" alt="Escarola"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -353,7 +371,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Maíz"></div>
+                        <div class="sales__img"><img src="assets/img/products/corn.jpg" alt="Maíz"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -381,7 +399,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/pimverde (2).jpg" alt="Pimiento verde">
+                        <div class="sales__img"><img src="assets/img/products/green_pepper1.jpg" alt="Pimiento verde">
                         </div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
@@ -477,7 +495,7 @@
 
                 <div class="featured__grid col-12">
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/manzana.jpg" alt="Manzana"></div>
+                        <div class="sales__img"><img src="assets/img/products/apple1.jpg" alt="Manzana"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -534,11 +552,17 @@
 
                     <article class="sales__item product__item--featured">
                         <span class="sales__badge">-30%</span>
-                        <div class="sales__img"><img src="assets/img/products/orange1.jpg" alt="Naranja"></div>
+                        <div class="sales__img">
+                            <a href="orange_product.html">
+                                <img src="assets/img/products/orange1.jpg" alt="Naranja">
+                            </a>
+                        </div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
-                                    <h4 class="sales__name sales__name--featured">Naranja</h4>
+                                    <a href="orange_product.html">
+                                        <h4 class="sales__name sales__name--featured">Naranja</h4>
+                                    </a>
                                     <div class="sales__price">
                                         <span class="sales__price--new">0,36€/ud</span>
                                         <span class="sales__price--old--featured">0,52€/ud</span>
@@ -565,7 +589,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/pimrojo.jpg" alt="Pimiento rojo"></div>
+                        <div class="sales__img"><img src="assets/img/products/red_pepper.jpg" alt="Pimiento rojo"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -593,7 +617,7 @@
                     </article>
 
                     <article class="sales__item">
-                        <div class="sales__img"><img src="assets/img/products/maiz.jpg" alt="Maiz"></div>
+                        <div class="sales__img"><img src="assets/img/products/corn.jpg" alt="Maiz"></div>
                         <div class="sales__item__bottom">
                             <div class="sales__productInfo">
                                 <div class="sales__info">
@@ -662,7 +686,7 @@
                     <h4>Navegación</h4>
                     <ul>
                         <li><a href="index.html">Tienda</a></li>
-                        <li><a href="products.html">Productos</a></li>
+                        <li><a href="#">Productos</a></li>
                         <li><a href="about.html">Sobre nosotros</a></li>
                     </ul>
                 </div>
