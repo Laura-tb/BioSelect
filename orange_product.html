@@ -38,7 +38,7 @@
             </div>
 
             <div class="header__search">
-                <input type="text" placeholder="Búsqueda de productos">
+                <input type="text" placeholder="Búsqueda de productos" aria-label="Buscar productos">
                 <button class="button">Buscar</button>
             </div>
 
@@ -64,7 +64,7 @@
                         <li><a href="index.html#categories" class="nav__link">Categorías</a></li>
                         <li><a href="index.html#offers" class="nav__link">Ofertas</a></li>
                         <li><a href="index.html#featured" class="nav__link">Destacados</a></li>
-                        <li><a href="contact.html" class="nav__link">Contacto</a></li>
+                        <li><a href="#" class="nav__link">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -94,10 +94,15 @@
             <div class="product__inner">
                 <div class="container grid grid-12">
 
+                    <!--Imagen producto-->
+                    <div class="product__media col-5">
+                        <img src="assets/img/products/orange1.jpg" alt="Naranja" class="product__image">
+                    </div>
+
                     <!--Carrusel vertical-->
                     <div class="product__thumbs col-2">
                         <div class="product__button">
-                            <button class="thumbs__arrow thumbs__arrow--up" aria-label="Previous">❮</button>
+                            <button class="thumbs__arrow thumbs__arrow--up" aria-label="Anterior">❮</button>
                         </div>
 
                         <div class="thumbs__list">
@@ -107,14 +112,8 @@
                         </div>
 
                         <div class="product__button">
-                            <button class="thumbs__arrow thumbs__arrow--down" aria-label="Next">❯</button>
+                            <button class="thumbs__arrow thumbs__arrow--down" aria-label="Siguiente">❯</button>
                         </div>
-
-                    </div>
-
-                    <!--Imagen producto-->
-                    <div class="product__media col-5">
-                        <img src="assets/img/products/orange1.jpg" alt="Naranja" class="product__image">
                     </div>
 
                     <!--Info producto-->
@@ -124,7 +123,7 @@
 
                         <!-- Valoración -->
                         <div class="product__rating">
-                            <span class="product__stars">★★★★★</span>
+                            <span class="product__stars" aria-label="Estrellas de valoración naranjas">★★★★★</span>
                             <span class="product__reviews">1 Valoración</span>
                         </div>
 
@@ -146,12 +145,14 @@
                         <!-- Cantidad + botón -->
                         <div class="product__actions">
                             <div class="product__qty">
-                                <button class="qty__btn qty__btn--minus" aria-label="Decrease">−</button>
-                                <input type="text" class="qty__input" value="1" min="1">
-                                <button class="qty__btn qty__btn--plus" aria-label="Increase">+</button>
+                                <button class="qty__btn qty__btn--minus" aria-label="Disminuir">−</button>
+                                <input type="text" class="qty__input" value="1" min="1"
+                                    aria-label="Cantidad de producto">
+                                <button class="qty__btn qty__btn--plus" aria-label="Aumentar">+</button>
                             </div>
 
-                            <button class="button__banner product__add-to-cart">
+                            <button class="button__banner product__add-to-cart"
+                                aria-label="Añadir al carrito de compra">
                                 Añadir al carrito
                             </button>
                         </div>
@@ -168,9 +169,9 @@
 
                 <!-- Desplegable 1: Descripción -->
                 <div class="accordion">
-                    <button class="accordion__header" aria-expanded="false">
+                    <button class="accordion__header" aria-expanded="false" aria-controls="description">
                         <span>Descripción</span>
-                        <span class="accordion__icon">+</span>
+                        <span class="accordion__icon" aria-label="Expandir">+</span>
                     </button>
                     <div class="accordion__content">
                         <p>
@@ -187,9 +188,9 @@
 
                 <!-- Desplegable 2: Información adicional -->
                 <div class="accordion">
-                    <button class="accordion__header" aria-expanded="false">
+                    <button class="accordion__header" aria-expanded="false" aria-controls="additional-info">
                         <span>Información adicional</span>
-                        <span class="accordion__icon">+</span>
+                        <span class="accordion__icon" aria-label="Expandir">+</span>
                     </button>
                     <div class="accordion__content">
                         <p>
@@ -207,9 +208,9 @@
 
                 <!-- Desplegable 3: Valoraciones -->
                 <div class="accordion">
-                    <button class="accordion__header" aria-expanded="false">
+                    <button class="accordion__header" aria-expanded="false" aria-controls="reviews">
                         <span>Valoraciones</span>
-                        <span class="accordion__icon">+</span>
+                        <span class="accordion__icon" aria-label="Expandir">+</span>
                     </button>
                     <div class="accordion__content">
 
@@ -261,7 +262,7 @@
                         <li><a href="index.html#categories">Categorías</a></li>
                         <li><a href="index.html#offers">Ofertas</a></li>
                         <li><a href="index.html#featured">Destacados</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
 
