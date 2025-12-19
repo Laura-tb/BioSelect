@@ -6,7 +6,7 @@
 }
 
 .breadcrumb__nav {
-    color: var(--color-gray-400);
+    color: var(--color-gray-500);
 }
 
 .breadcrumb__nav img {
@@ -47,21 +47,21 @@
 }
 
 .thumb {
-    width: 100px;            
-    height: 100px;             
-    padding: 6px;             
+    width: 100px;
+    height: 100px;
+    padding: 6px;
 
-    border: 1px solid var(--color-gray-300);
+    border: 1px solid var(--color-gray-600);
     border-radius: 10px;
 }
 
 .thumbs__list img {
-    object-fit: contain;     
+    object-fit: contain;
 }
 
 .thumb.is-active {
-    border: 1px solid var(--color-primary-soft);
-    box-shadow: 3px 2px 16px var(--color-primary-soft);
+    border: 1px solid var(--color-primary);
+    box-shadow: 3px 2px 16px var(--color-primary);
 }
 
 .thumbs__arrow {
@@ -70,7 +70,7 @@
     border: 0;
     font-size: 20px;
     cursor: pointer;
-    color: var(--color-gray-700);
+    color: var(--color-gray-900);
 
 }
 
@@ -89,7 +89,7 @@
         border: 0;
         font-size: 20px;
         cursor: pointer;
-        color: #6b7280;
+        color: var(--color-gray-900);
     }
 
     /* Lista vertical */
@@ -112,11 +112,9 @@
 
     /* Miniatura activa */
     .thumb.is-active {
-        border-color: #22c55e;
-        background: #f0fdf4;
+        border: 1px solid var(--color-primary);
+        box-shadow: 3px 2px 16px var(--color-primary);
     }
-
-
 }
 
 /* Contenedor de la imagen principal */
@@ -153,7 +151,7 @@
 }
 
 .product__stars {
-    color: #facc15;
+    color: var(--color-warning);
 }
 
 .product__price {
@@ -165,21 +163,22 @@
 
 .product__price--old {
     text-decoration: line-through;
-    color: #9ca3af;
+    color: var(--color-gray-500);
     font-size: 14px;
 }
 
 .product__price--current {
     font-weight: 600;
-    color: #16a34a;
+    color: var(--color-primary);
 }
 
 .product__price--discount {
     font-size: 12px;
     padding: 2px 8px;
     border-radius: 999px;
-    background: #fee2e2;
-    color: #b91c1c;
+    color: var(--color-danger);
+    font-weight: 600;
+    border: 1px solid var(--color-danger);
 }
 
 .product__description {
@@ -207,7 +206,7 @@
     width: 32px;
     height: 32px;
     border: none;
-    background: #f9fafb;
+    background: var(--color-white);
     cursor: pointer;
 }
 
@@ -216,28 +215,14 @@
     text-align: center;
     border: none;
     outline: none;
+    color:var(--color-gray-900)
 }
-
-/* Botón principal genérico */
-.btn.btn--primary {
-    padding: 10px 24px;
-    border-radius: 999px;
-    border: none;
-    background: #22c55e;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 16px;
-    height: 44px;
-}
-
-
 
 /* TABS */
 .product-details__tabs {
     display: flex;
     gap: 24px;
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--color-gray-100);
 }
 
 .product-details__tab {
@@ -247,7 +232,7 @@
 }
 
 .product-details__tab.is-active {
-    border-bottom: 2px solid #22c55e;
+    border-bottom: 2px solid var(--color-primary);
 }
 
 /* paneles; luego ya los mostraremos/ocultaremos con JS */
@@ -270,7 +255,7 @@
 
 /* CADA BLOQUE DEL ACORDEÓN */
 .accordion {
-    border-bottom: 1px solid #e5e7eb;
+    border-bottom: 1px solid var(--color-gray-400);
     padding-block: 12px;
 }
 
@@ -280,7 +265,7 @@
     background: none;
     border: none;
     padding: 0;
-    font-size: 18px;
+    font-size: 1em;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -301,6 +286,8 @@
     transition: max-height 0.25s ease;
     padding-right: 8px;
     text-align: justify;
+    font-size: 0.8em;
+    color: var(--color-gray-900);
 }
 
 /* ACTIVO */
@@ -331,12 +318,12 @@ ul li {
 .review__header {
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 200;
 }
 
 .review__text {
     margin-top: 4px;
-    font-size: 16px;
+    font-size: 1em;
     color: var(--color-gray-800);
 }

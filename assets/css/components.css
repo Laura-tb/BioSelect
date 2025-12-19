@@ -13,7 +13,7 @@
 .button__banner {
     padding: 5% 5%;
     font-size: 0.8rem;
-    border-radius: 6px;
+    border-radius: 50%;
     background-color: var(--color-primary-hard);
     border: none;
     justify-content: center;
