@@ -21,13 +21,19 @@
     vertical-align: text-bottom;
 }
 
-.logo span {
+.logo h1 {
     color: var(--color-gray-900);
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 1.8rem;
     letter-spacing: -0.03em;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .header__search {
@@ -133,7 +139,7 @@ input {
         height: 32px;
     }
 
-    .logo span {
+    .logo h1 {
         font-size: 1.75rem;
         line-height: 2.1rem;
     }
@@ -184,7 +190,7 @@ input {
         height: 40px;
     }
 
-    .logo span {
+    .logo h1 {
         font-size: 2rem;
         line-height: 2.4rem;
     }
@@ -206,7 +212,7 @@ input {
         height: 44px;
     }
 
-    .logo span {
+    .logo h1 {
         font-size: 2.125rem;
         line-height: 2.5rem;
     }
