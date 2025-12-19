@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/pages.css">
+
 </head>
 
 <body>
@@ -65,7 +65,7 @@
                         <li><a href="#categories" class="nav__link">Categorías</a></li>
                         <li><a href="#offers" class="nav__link">Ofertas</a></li>
                         <li><a href="#featured" class="nav__link">Destacados</a></li>
-                        <li><a href="contact.html" class="nav__link">Contacto</a></li>
+                        <li><a href="#" class="nav__link">Contacto</a></li>
                     </ul>
                 </nav>
 
@@ -86,7 +86,7 @@
                         <!-- SLIDE 1 -->
                         <article class="banner__slide banner__slide--active banner__slide--overlay--right">
                             <div class="banner__image">
-                                <img src="assets/img/banner/basket.png" class="cesta" alt="Cesta de vegetales">
+                                <img src="assets/img/banner/basket_comp.png" class="cesta" alt="Cesta de vegetales">
                             </div>
 
                             <div class="banner__content cesta">
@@ -104,7 +104,7 @@
                         <!-- SLIDE 2 -->
                         <article class="banner__slide banner__slide--overlay--left">
                             <div class="banner__image">
-                                <img src="assets/img/banner/plate.png" alt="Frutas ecológicas">
+                                <img src="assets/img/banner/plate_comp.png" alt="Frutas ecológicas">
                             </div>
 
                             <div class="banner__content">
@@ -116,13 +116,12 @@
                         </article>
 
                         <!-- SLIDE 3 -->
-                        <article class="banner__slide banner__slide--overlay--right">
+                        <article class="banner__slide banner__slide--overlay--right ">
                             <div class="banner__image">
-                                <img src="assets/img/banner/garden.jpg" alt="Verduras frescas">
+                                <img src="assets/img/banner/garden_comp.jpg" alt="Verduras frescas">
                             </div>
 
-                            <div class="banner__content">
-                                <div class="banner__title">Directo del huerto</div>
+                            <div class="banner__content__huerto">                               
                                 <div class="banner__subtitle">
                                     Producto fresco
                                 </div>
@@ -214,24 +213,24 @@
 
                 <div class="offers__grid col-12">
 
-                    <article class="offers__item offers__item--featured">
-                        <span class="offers__badge">-30%</span>
-                        <div class="offers__img">
+                    <article class="product__item product__item--featured">
+                        <span class="product__badge">-30%</span>
+                        <div class="product__img">
                             <a href="apple_product.html">
                                 <img src="assets/img/products/apple1.jpg" alt="Manzana">
                             </a>
                         </div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
                                     <a href="apple_product.html">
-                                        <h4 class="offers__name offers__name--featured">Manzana</h4>
+                                        <h4 class="product__name product__name--featured">Manzana</h4>
                                     </a>
 
-                                    <span class="offers__price offers__price--new">0,29€/ud</span>
-                                    <span class="offers__price offers__price--old">0,42€/ud</span>
+                                    <span class="product__price product__price--new">0,29€</span>
+                                    <span class="product__price product__price--old">0,42€</span>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -240,7 +239,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart button__cart--primary" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -249,15 +248,15 @@
                     </article>
 
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/eggplant.jpg" alt="Berenjena"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Berenjena</h4>
-                                    <h5 class="offers__price">0,74€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/eggplant.jpg" alt="Berenjena"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Berenjena</h4>
+                                    <h5 class="product__price">0,74€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -266,7 +265,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -277,15 +276,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/persimmon.jpg" alt="Caqui"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Caqui</h4>
-                                    <h5 class="offers__price">0,58€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/persimmon.jpg" alt="Caqui"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Caqui</h4>
+                                    <h5 class="product__price">0,58€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -294,7 +293,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -305,15 +304,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/cauliflower.jpg" alt="Coliflor"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Coliflor</h4>
-                                    <h5 class="offers__price">2,62€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/cauliflower.jpg" alt="Coliflor"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Coliflor</h4>
+                                    <h5 class="product__price">2,62€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -322,7 +321,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -333,15 +332,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/lettuce.jpg" alt="Escarola"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Escarola</h4>
-                                    <h5 class="offers__price">1,94€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/lettuce.jpg" alt="Escarola"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Escarola</h4>
+                                    <h5 class="product__price">1,94€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -350,7 +349,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -361,15 +360,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/corn.jpg" alt="Maíz"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Maíz</h4>
-                                    <h5 class="offers__price">1,55€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/corn.jpg" alt="Maíz"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Maíz</h4>
+                                    <h5 class="product__price">1,55€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -378,7 +377,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -389,16 +388,16 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/green_pepper1.jpg" alt="Pimiento verde">
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/green_pepper1.jpg" alt="Pimiento verde">
                         </div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Pimiento verde</h4>
-                                    <h5 class="offers__price">0,73€/ud</h5>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Pimiento verde</h4>
+                                    <h5 class="product__price">0,73€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -407,7 +406,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -418,15 +417,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Tomate</h4>
-                                    <h5 class="offers__price">0,53€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Tomate</h4>
+                                    <h5 class="product__price">0,53€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -435,7 +434,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -446,15 +445,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/potatos.jpg" alt="Patata"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Patata</h4>
-                                    <h5 class="offers__price">0,44€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/potatos.jpg" alt="Patata"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Patata</h4>
+                                    <h5 class="product__price">0,44€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -463,7 +462,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -485,15 +484,15 @@
                 </header>
 
                 <div class="featured__grid col-12">
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/apple1.jpg" alt="Manzana"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Manzana</h4>
-                                    <h5 class="offers__price">0,42€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/apple1.jpg" alt="Manzana"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Manzana</h4>
+                                    <h5 class="product__price">0,42€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -502,7 +501,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -513,15 +512,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Tomate</h4>
-                                    <h5 class="offers__price">0,53€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/tomatoes.jpg" alt="Tomate"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Tomate</h4>
+                                    <h5 class="product__price">0,53€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -530,7 +529,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -541,25 +540,26 @@
 
                     </article>
 
-                    <article class="offers__item product__item--featured">
-                        <span class="offers__badge">-30%</span>
-                        <div class="offers__img">
+                    <article class="product__item product__item--featured2">
+                        <span class="product__badge">-30%</span>
+                        <div class="product__img">
                             <a href="orange_product.html">
                                 <img src="assets/img/products/orange1.jpg" alt="Naranja">
                             </a>
                         </div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
                                     <a href="orange_product.html">
-                                        <h4 class="offers__name offers__name--featured">Naranja</h4>
+                                        <h4 class="product__name product__name--featured">Naranja</h4>
                                     </a>
-                                    <div class="offers__price">
-                                        <span class="offers__price--new">0,36€/ud</span>
-                                        <span class="offers__price--old--featured">0,52€/ud</span>
+                                    <div class="product__price">
+                                        <span class="product__price--new">0,36€</span>
+                                        <span class="product__price--old--featured">0,52€</span>
                                     </div>
                                 </div>
-                                <div class="offers__rating">
+                         
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -568,7 +568,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart button__cart--primary" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito" alt="Boton añadir al carrito">
                                 </button>
@@ -579,16 +579,16 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/red_pepper.jpg" alt="Pimiento rojo">
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/red_pepper.jpg" alt="Pimiento rojo">
                         </div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Pimiento rojo</h4>
-                                    <h5 class="offers__price">0,99€/ud</h5>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Pimiento rojo</h4>
+                                    <h5 class="product__price">0,99€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -597,7 +597,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -608,15 +608,15 @@
 
                     </article>
 
-                    <article class="offers__item">
-                        <div class="offers__img"><img src="assets/img/products/corn.jpg" alt="Maiz"></div>
-                        <div class="offers__item__bottom">
-                            <div class="offers__productInfo">
-                                <div class="offers__info">
-                                    <h4 class="offers__name">Maiz</h4>
-                                    <h5 class="offers__price">1,55€/ud</h5>
+                    <article class="product__item">
+                        <div class="product__img"><img src="assets/img/products/corn.jpg" alt="Maiz"></div>
+                        <div class="product__item__bottom">
+                            <div class="product__productInfo">
+                                <div class="product__info">
+                                    <h4 class="product__name">Maiz</h4>
+                                    <h5 class="product__price">1,55€</h5>
                                 </div>
-                                <div class="offers__rating">
+                                <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -625,7 +625,7 @@
                                 </div>
 
                             </div>
-                            <div class="offers__button">
+                            <div class="product__button">
                                 <button class="button__cart" aria-label="Añadir al carrito">
                                     <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito">
                                 </button>
@@ -668,7 +668,7 @@
                         <li><a href="#categories">Categorías</a></li>
                         <li><a href="#offers">Ofertas</a></li>
                         <li><a href="#featured">Destacados</a></li>
-                        <li><a href="contact.html">Contacto</a></li>
+                        <li><a href="#">Contacto</a></li>
                     </ul>
                 </div>
 
