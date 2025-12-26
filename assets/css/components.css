@@ -11,13 +11,28 @@
 }
 
 .button__banner {
-    padding: 5% 5%;
-    font-size: 0.8rem;
-    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 13px;
+    border-radius: 999px;
     background-color: var(--color-primary-hard);
-    border: none;
-    justify-content: center;
     color: var(--color-white);
+    border: none;
+    font-size: 0.85rem;
     font-weight: 600;
-    margin: 10px 0;
+    box-shadow: 0 4px 12px var(--color-gray-900);
+    cursor: pointer;
+}
+
+.banner__content .banner__cta-icon {
+    font-size: 1rem;
+}
+
+/* desktop */
+@media (min-width: 768px) {
+    .button__banner {
+        padding: 12px 26px;
+        font-size: 1rem;
+    }
 }

@@ -19,27 +19,27 @@ document.addEventListener('DOMContentLoaded', () => {
     currentIndex = index;
   }
 
-  // Click en miniaturas
+  // Click on thumbnails
   thumbs.forEach((thumb, index) => {
     thumb.addEventListener('click', () => {
       updateImage(index);
     });
   });
 
-  // Flecha izquierda
+  // Left arrow
   prevBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const next = (currentIndex - 1 + thumbs.length) % thumbs.length;
     updateImage(next);
   });
 
-  // Flecha derecha
+  // Right arrow
   nextBtn.addEventListener('click', (e) => {
     e.preventDefault();
     const next = (currentIndex + 1) % thumbs.length;
     updateImage(next);
   });
 
-  // Inicial
+  // Initial
   updateImage(0);
 });

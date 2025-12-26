@@ -1,5 +1,4 @@
 /* PRODUCT*/
-
 /*Breadcrumb*/
 .breadcrumb {
     font-size: 16px;
@@ -23,8 +22,6 @@
     background-color: var(--color-white);
 }
 
-
-/* Desktop: alineamos verticalmente */
 @media (min-width: 768px) {
     .product__inner .grid-12 {
         gap: 32px;
@@ -36,8 +33,70 @@
     }
 }
 
+/*Promo ticker*/
+.promo-ticker {
+    background: var(--color-gray-900);
+    color: var(--color-white);
+    overflow: hidden;
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.promo-ticker__track {
+    display: flex;
+    width: max-content;
+    animation: promoMarquee 20s linear infinite;
+}
+
+.promo-ticker__text {
+    white-space: nowrap;
+    margin: 0;
+    padding: 0 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+@keyframes promoMarquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .promo-ticker__track {
+        animation: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .promo-ticker__text {
+        font-size: 1rem;
+        padding: 12px 0;
+    }
+
+    .promo-ticker__track {
+        display: flex;
+        width: max-content;
+        animation: promoMarquee 15s linear infinite;
+    }
+
+    @keyframes promoMarquee {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
+
 /*PRODUCT INFO*/
-/* Columna de miniaturas */
 .product__thumbs {
     display: flex;
     align-items: center;
@@ -87,7 +146,6 @@
         gap: 12px;
     }
 
-    /* Flechas arriba y abajo */
     .thumbs__arrow {
         background: none;
         border: 0;
@@ -96,14 +154,11 @@
         color: var(--color-gray-900);
     }
 
-    /* Lista vertical */
     .thumbs__list {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
-
-    /* Miniatura */
 
     .thumb {
         width: 100%;
@@ -114,14 +169,12 @@
         cursor: pointer;
     }
 
-    /* Miniatura activa */
     .thumb.is-active {
         border: 1px solid var(--color-primary);
         box-shadow: 3px 2px 16px var(--color-primary);
     }
 }
 
-/* Contenedor de la imagen principal */
 .product__media {
     display: flex;
     justify-content: center;
@@ -130,14 +183,13 @@
 
 }
 
-/* Imagen principal */
 .product__image {
     height: 285px;
     object-fit: contain;
     width: 90%;
 }
 
-/*INFO PRODUCT*/
+/*PRODUCT INFO*/
 .product__info {
     display: flex;
     flex-direction: column;
@@ -187,7 +239,6 @@
     border: 1px solid var(--color-danger);
 }
 
-/* Cantidad + botón */
 .product__actions {
     display: flex;
     flex-wrap: wrap;
@@ -236,7 +287,6 @@
     border-bottom: 2px solid var(--color-primary);
 }
 
-/* paneles; luego ya los mostraremos/ocultaremos con JS */
 .product-details__panel {
     padding-top: 24px;
     display: none;
@@ -246,7 +296,6 @@
     display: block;
 }
 
-/* CONTENEDOR */
 .product-details {
     padding-block: 40px;
     display: flex;
@@ -254,13 +303,11 @@
     gap: 16px;
 }
 
-/* CADA BLOQUE DEL ACORDEÓN */
 .accordion {
     border-bottom: 1px solid var(--color-gray-400);
     padding-block: 12px;
 }
 
-/* HEADER DEL ACORDEÓN */
 .accordion__header {
     width: 100%;
     background: none;
@@ -274,13 +321,11 @@
     cursor: pointer;
 }
 
-/* ICONO + / – */
 .accordion__icon {
     font-size: 22px;
     transition: transform 0.2s;
 }
 
-/* CONTENIDO OCULTO POR DEFECTO */
 .accordion__content {
     max-height: 0;
     overflow: hidden;
@@ -290,12 +335,10 @@
     color: var(--color-gray-900);
 }
 
-/* ACTIVO */
 .accordion__header[aria-expanded="true"]+.accordion__content {
     padding-top: 12px;
 }
 
-/* Giramos icono en abierto */
 .accordion__header[aria-expanded="true"] .accordion__icon {
     transform: rotate(45deg);
 }

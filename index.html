@@ -18,11 +18,13 @@
 </head>
 
 <body>
-
+    <!-- Site header -->
     <header class="header">
 
+        <!-- Top header row: burger, logo, search, quick actions -->
         <div class="container header__top">
 
+            <!-- Mobile navigation toggle -->
             <div class="burger__menu">
                 <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                     <span class="nav__toggle__line"></span>
@@ -31,6 +33,7 @@
                 </button>
             </div>
 
+            <!--Brand logo and homepage link-->
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
@@ -38,11 +41,13 @@
                 </a>
             </div>
 
+            <!-- Product search (desktop/tablet) -->
             <div class="header__search">
                 <input type="text" placeholder="Búsqueda de productos" aria-labelledby="Barra de Busqueda de productos">
                 <button class="button">Buscar</button>
             </div>
 
+            <!-- Header quick-access icons (search/cart/user) -->
             <div class="header__icons">
                 <a class="icon icon__search" href="#">
                     <img src="assets/icons/search1.svg" alt="Buscar producto">
@@ -50,15 +55,17 @@
                 <a class="icon icon__cart" href="#">
                     <img src="assets/icons/cart1.svg" alt="Carrito">
                 </a>
-                <a class="icon" href="#">
+                <a class="icon icon__user" href="#">
                     <img src="assets/icons/user1.svg" alt="Cuenta de usuario">
                 </a>
             </div>
         </div>
 
+        <!-- Main navigation bar -->
         <nav class="header__nav" aria-label="Main">
             <div class="container nav__inner">
 
+                <!-- Primary nav links -->
                 <nav class="main__nav" id="site-nav" aria-label="Main">
                     <ul class="nav__links">
                         <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
@@ -71,19 +78,18 @@
 
             </div>
         </nav>
-
     </header>
 
     <main>
         <!--Banner-->
         <section class="banner">
             <div class="banner__inner">
-                <div class="container">                    
+                <div class="container">
 
-                    <!-- Carrusel -->
+                    <!-- Banner carousel/slider -->
                     <div class="banner__slider">
 
-                        <!-- SLIDE 1 -->
+                        <!-- Slide 1 -->
                         <article class="banner__slide banner__slide--active banner__slide--overlay--right">
                             <div class="banner__image">
                                 <img src="assets/img/banner/basket_comp.png" class="cesta" alt="Cesta de vegetales">
@@ -101,7 +107,7 @@
                             </div>
                         </article>
 
-                        <!-- SLIDE 2 -->
+                        <!-- Slide 2 -->
                         <article class="banner__slide banner__slide--overlay--left">
                             <div class="banner__image">
                                 <img src="assets/img/banner/plate_comp.png" alt="Frutas ecológicas">
@@ -115,37 +121,41 @@
                             </div>
                         </article>
 
-                        <!-- SLIDE 3 -->
+                        <!-- Slide 3 -->
                         <article class="banner__slide banner__slide--overlay--right ">
                             <div class="banner__image">
                                 <img src="assets/img/banner/garden_comp.jpg" alt="Verduras frescas">
                             </div>
 
-                            <div class="banner__content__huerto">                               
+                            <div class="banner__content__huerto">
                                 <div class="banner__subtitle">
                                     Producto fresco
                                 </div>
                             </div>
                         </article>
                     </div>
-                    
+
                 </div>
         </section>
 
         <!--Categories-->
         <section class="categories" id="categories">
             <div class="container grid grid-12">
+                <!-- Section heading -->
                 <header class="section__header col-12">
                     <h2>Categorías</h2>
                 </header>
 
+                <!-- Categories grid -->
                 <div class="categories__grid col-12">
 
+                    <!-- Featured category card -->
                     <article class="category category--featured">
                         <img src="assets/img/categories/fruits.jpg" alt="Frutas">
                         <h3 class="category__text">Frutas</h3>
                     </article>
 
+                    <!-- Category cards -->
                     <article class="category">
                         <img src="assets/img/categories/vegetables.jpg" alt="Hortalizas">
                         <h3 class="category__text">Hortalizas</h3>
@@ -207,12 +217,15 @@
         <!--Offers-->
         <section class="offers" id="offers">
             <div class="container grid grid-12">
+                <!-- Section heading -->
                 <header class="section__header col-12">
                     <h2>Ofertas especiales</h2>
                 </header>
 
+                <!-- Offers products grid -->
                 <div class="offers__grid col-12">
 
+                    <!-- Featured offer product card -->
                     <article class="product__item product__item--featured">
                         <span class="product__badge">-30%</span>
                         <div class="product__img">
@@ -220,6 +233,7 @@
                                 <img src="assets/img/products/apple1.jpg" alt="Manzana">
                             </a>
                         </div>
+
                         <div class="product__item__bottom">
                             <div class="product__productInfo">
                                 <div class="product__info">
@@ -247,7 +261,7 @@
                         </div>
                     </article>
 
-
+                    <!-- Offer product card -->
                     <article class="product__item">
                         <div class="product__img"><img src="assets/img/products/eggplant.jpg" alt="Berenjena"></div>
                         <div class="product__item__bottom">
@@ -476,14 +490,17 @@
             </div>
         </section>
 
-        <!--Products-->
+        <!-- Featured products -->
         <section class="featured" id="featured">
             <div class="container grid grid-12">
+                <!-- Section heading -->
                 <header class="section__header col-12">
                     <h2>Productos destacados</h2>
                 </header>
 
+                <!-- Featured products grid -->
                 <div class="featured__grid col-12">
+                    <!-- Product card -->
                     <article class="product__item">
                         <div class="product__img"><img src="assets/img/products/apple1.jpg" alt="Manzana"></div>
                         <div class="product__item__bottom">
@@ -558,7 +575,7 @@
                                         <span class="product__price--old--featured">0,52€</span>
                                     </div>
                                 </div>
-                         
+
                                 <div class="product__rating">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
                                     <img src="assets/icons/star_orange.svg" alt="Estrella de valoracion naranja">
@@ -570,7 +587,8 @@
                             </div>
                             <div class="product__button">
                                 <button class="button__cart button__cart--primary" aria-label="Añadir al carrito">
-                                    <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito" alt="Boton añadir al carrito">
+                                    <img src="assets/icons/Bag.svg" alt="Boton añadir al carrito"
+                                        alt="Boton añadir al carrito">
                                 </button>
                             </div>
                         </div>
@@ -603,9 +621,6 @@
                                 </button>
                             </div>
                         </div>
-
-
-
                     </article>
 
                     <article class="product__item">
@@ -632,14 +647,13 @@
                             </div>
                         </div>
 
-
-
                     </article>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Site footer -->
     <footer class="footer">
         <div class="container footer__grid">
 
@@ -660,6 +674,7 @@
                 </ul>
             </div>
 
+            <!-- Footer sitemap -->
             <nav class="footer__nav" aria-label="Mapa del sitio">
                 <div class="footer__col">
                     <h3 class="footer__title">Tienda</h3>
@@ -701,6 +716,4 @@
     <script src="assets/js/slider.js"></script>
 
 </body>
-
-
 </html>
