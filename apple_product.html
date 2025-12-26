@@ -18,10 +18,11 @@
 </head>
 
 <body>
+    <!-- Site header-->
     <header class="header">
-
+        <!-- Top header row: burger, logo, search, quick actions -->
         <div class="container header__top">
-
+            <!-- Mobile navigation toggle -->
             <div class="burger__menu">
                 <button class="nav__toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
                     <span class="nav__toggle__line"></span>
@@ -30,6 +31,7 @@
                 </button>
             </div>
 
+            <!-- Brand logo and homepage link -->
             <div class="logo">
                 <a href="index.html">
                     <img src="assets/icons/plant 1.svg" alt="BioSelect logo">
@@ -37,11 +39,13 @@
                 </a>
             </div>
 
+            <!-- Product search (desktop/tablet) -->
             <div class="header__search">
                 <input type="text" placeholder="Búsqueda de productos" aria-label="Buscar productos">
                 <button class="button">Buscar</button>
             </div>
 
+            <!-- Header quick-access icons (search/cart/user) -->
             <div class="header__icons">
                 <a class="icon icon__search" href="#">
                     <img src="assets/icons/search1.svg" alt="Buscar producto">
@@ -49,15 +53,17 @@
                 <a class="icon icon__cart" href="#">
                     <img src="assets/icons/cart1.svg" alt="Carrito">
                 </a>
-                <a class="icon" href="#">
+                <a class="icon icon__user" href="#">
                     <img src="assets/icons/user1.svg" alt="Cuenta de usuario">
                 </a>
             </div>
         </div>
 
+        <!-- Main navigation bar -->
         <nav class="header__nav" aria-label="Main">
             <div class="container nav__inner">
 
+                <!-- Primary nav links -->
                 <nav class="main__nav" id="site-nav" aria-label="Main">
                     <ul class="nav__links">
                         <li><a href="index.html" class="nav__link nav__link--active">Home</a></li>
@@ -67,10 +73,8 @@
                         <li><a href="#" class="nav__link">Contacto</a></li>
                     </ul>
                 </nav>
-
             </div>
         </nav>
-
     </header>
 
     <main>
@@ -89,17 +93,29 @@
             </div>
         </section>
 
-        <!--Product Info-->
+        <!-- Promo ticker (scrolling discount banner) -->
+        <section class="promo-ticker" aria-label="Promoción">
+            <div class="promo-ticker__track">
+                <p class="promo-ticker__text">
+                    Descuento 30%  ·  Descuento 30%  ·  Descuento 30%  ·  Descuento 30% ·
+                </p>
+                <p class="promo-ticker__text" aria-hidden="true">
+                    Descuento 30%  ·  Descuento 30%  ·  Descuento 30%  ·  Descuento 30% ·
+                </p>
+            </div>
+        </section>
+
+        <!-- Product main content -->
         <section class="product">
             <div class="product__inner">
                 <div class="container grid grid-12">
 
-                    <!--Imagen producto-->
+                    <!-- Product image -->
                     <div class="product__media col-5">
                         <img src="assets/img/products/apple2.jpg" alt="Manzana verde" class="product__image">
                     </div>
 
-                    <!--Carrusel vertical-->
+                    <!-- Vertical thumbnail carousel -->
                     <div class="product__thumbs col-2">
                         <div class="product__button">
                             <button class="thumbs__arrow thumbs__arrow--up" aria-label="Anterior">❮</button>
@@ -115,18 +131,16 @@
                         </div>
                     </div>
 
-                    <!--Info producto-->
+                    <!-- Product information -->
                     <div class="product__info col-5">
-                        <!-- Nombre -->
+
                         <h1 class="product__title">Manzana Verde</h1>
 
-                        <!-- Valoración -->
                         <div class="product__rating">
                             <span class="product__stars" aria-label="Estrellas de valoración naranjas">★★★★★</span>
                             <span class="product__reviews">2 Valoraciones</span>
                         </div>
 
-                        <!-- Precio -->
                         <div class="product__price">
                             <span class="product__price--current">0,29€</span>
                             <span class="product__price--old">0,42€</span>
@@ -134,13 +148,11 @@
                             <span class="product__price--discount">30% Descuento</span>
                         </div>
 
-                        <!-- Texto descripción corta -->
                         <p class="product__description">
                             Manzana verde fresca y crujiente, de sabor ligeramente ácido y muy refrescante, ideal para
                             consumir sola o en recetas saludables.
                         </p>
 
-                        <!-- Cantidad + botón -->
                         <div class="product__actions">
                             <div class="product__qty">
                                 <button class="qty__btn qty__btn--minus" aria-label="Disminuir">−</button>
@@ -149,23 +161,21 @@
                                 <button class="qty__btn qty__btn--plus" aria-label="Aumentar">+</button>
                             </div>
 
-                            <button class="button__banner product__add-to-cart"
+                            <button class="button__banner"
                                 aria-label="Añadir al carrito de compra">
                                 Añadir al carrito
                             </button>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
 
-        <!--Tabs-->
+        <!-- Product details (accordion tabs) -->
         <section class="product-details">
             <div class="container">
 
-                <!-- Desplegable 1: Descripción -->
+                <!-- Accordion item 1: Description -->
                 <div class="accordion">
                     <button class="accordion__header" aria-expanded="false" aria-controls="description">
                         <span>Descripción</span>
@@ -182,7 +192,7 @@
                     </div>
                 </div>
 
-                <!-- Desplegable 2: Información adicional -->
+                <!-- Accordion item 2: Additional information -->
                 <div class="accordion">
                     <button class="accordion__header" aria-expanded="false" aria-controls="additional-info">
                         <span>Información adicional</span>
@@ -202,7 +212,7 @@
                     </div>
                 </div>
 
-                <!-- Desplegable 3: Valoraciones -->
+                <!-- Accordion item 3: Reviews -->
                 <div class="accordion">
                     <button class="accordion__header" aria-expanded="false" aria-controls="reviews">
                         <span>Valoraciones</span>
@@ -229,15 +239,13 @@
                                 “Sabor ácido justo como me gusta. Aguanta muy bien varios días en la nevera.”
                             </p>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-
-
     </main>
 
+    <!-- Site footer -->
     <footer class="footer">
         <div class="container footer__grid">
 

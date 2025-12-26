@@ -58,7 +58,7 @@ input {
     padding: 6px;
 }
 
-.icon img {
+.header__icons .icon img {
     width: 20px;
     height: 20px;
 }
@@ -68,7 +68,44 @@ input {
     position: relative;
 }
 
-/* Menú oculto por defecto en mobile */
+.header__icons a.icon__search,
+.header__icons a.icon__cart,
+.header__icons a.icon__user {
+    width: 36px;
+    height: 36px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: transparent;
+
+    transition: background-color .2s ease, transform .2s ease;
+}
+
+.header__icons a.icon__search img,
+.header__icons a.icon__cart img,
+.header__icons a.icon__user img {
+    width: 18px;
+    height: 18px;
+    transition: filter .2s ease;
+}
+
+.header__icons a.icon__search:hover,
+.header__icons a.icon__cart:hover,
+.header__icons a.icon__user:hover {
+    background-color: var(--color-primary-hard);
+    transform: scale(1.05);
+}
+
+.header__icons a.icon__search:hover img,
+.header__icons a.icon__cart:hover img,
+.header__icons a.icon__user:hover img {
+    filter: brightness(0) invert(1);
+}
+
+/* Menu hidden by default on mobile */
 .header__search {
     display: none;
 }
@@ -107,7 +144,7 @@ input {
     font-weight: 600;
 }
 
-/* Botón burger */
+/* Burger button */
 .nav__toggle {
     display: inline-flex;
     width: 40px;
@@ -128,7 +165,7 @@ input {
     background: #111827;
 }
 
-/* ===== >= 480px (móviles grandes) ===== */
+/* ===== >= 480px (big mobile) ===== */
 @media (min-width: 480px) {
     .logo img {
         width: 32px;
@@ -151,7 +188,7 @@ input {
 }
 
 /* ===== DESKTOP ===== */
-/* En desktop: oculto burger y muestro menú inline */
+/* On desktop: hide burger menu and show inline navigation */
 @media (min-width: 768px) {
     .main__nav {
         display: block;
@@ -171,7 +208,7 @@ input {
         gap: 24px;
     }
 
-    .icon__search,
+    .header__icons a.icon__search,
     .burger__menu {
         display: none;
     }
@@ -205,7 +242,7 @@ input {
     }
 }
 
-/* ===== >= 1024px (desktop grande) ===== */
+/* ===== >= 1024px (big desktop) ===== */
 @media (min-width: 1024px) {
     .logo img {
         width: 44px;
@@ -247,7 +284,7 @@ input {
     padding: 0 16px;
 }
 
-/* Animación */
+/* Animation */
 @keyframes bannerAutoplay {
     0% {
         transform: translateX(0);
@@ -307,7 +344,7 @@ input {
     width: 60%;
 }
 
-/* Texto banner */
+/* Banner text */
 .banner__highlight {
     color: var(--color-danger);
     font-weight: 600;
@@ -331,17 +368,35 @@ input {
     z-index: 2;
 }
 
+.banner__slide--overlay--right .banner__image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
 .banner__content__huerto {
     position: absolute;
-    top: 69%;
-    left: 58%;
-    transform: translateY(-50%);
-    color: var(--color-white);
-    background-color: var(--color-primary-hard);
-    font-size: 4vw;
-    font-weight: 500;
-    ;
+    right: 20px;
+    bottom: 38px;
     z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: var(--color-primary-hard);
+    color: var(--color-white);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 24px var(--color-gray-900);
+    border: 1px solid var(--color-gray-700);
+}
+
+.banner__content__huerto .banner__subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
 }
 
 .banner__slide--overlay--left .banner__content {
@@ -389,6 +444,17 @@ input {
     .banner__slide--overlay--left .banner__content {
         font-size: 2.5vw;
     }
+
+    /*SLIDE 3*/
+    .banner__content__huerto {
+        right: 105px;
+        bottom: 50px;
+        padding: 12px 16px;
+    }
+
+    .banner__content__huerto .banner__subtitle {
+        font-size: 22px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -398,6 +464,16 @@ input {
 
     .banner__slide--overlay--right .banner__subtitle {
         font-size: 2rem;
+    }
+
+    .banner__content__huerto {
+        right: 56px;
+        bottom: 44px;
+        padding: 14px 18px;
+    }
+
+    .banner__content__huerto .banner__subtitle {
+        font-size: 28px;
     }
 }
 
@@ -411,14 +487,13 @@ input {
     justify-items: center;
 }
 
-/*Mobile*/
 .categories__grid {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-/*Desktop*/
+/*Categories Desktop*/
 @media(min-width: 768px) {
     .categories__grid {
         gap: 20px;
@@ -460,7 +535,6 @@ input {
     background-color: var(--color-gray-50);
 }
 
-/*Mobile*/
 .offers__grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -552,7 +626,7 @@ input {
     padding: 10px;
 }
 
-/*Producto en oferta destacado*/
+/*Featured product on sale*/
 .product__item--featured {
     grid-column: span 2;
     flex-direction: row;
@@ -625,7 +699,6 @@ input {
     filter: brightness(0) invert(1);
 }
 
-/************************************************************************************************************************************************************************************************************/
 /*Featured products*/
 .featured {
     background-color: var(--color-white);
@@ -650,7 +723,6 @@ input {
     font-size: 16px;
     margin: auto;
 }
-
 
 @media(min-width: 768px) {
 
@@ -776,7 +848,7 @@ input {
     color: var(--color-gray-400);
 }
 
-/* ===== >= 480px (móvil grande) ===== */
+/* ===== >= 480px (big mobile) ===== */
 @media (min-width: 480px) {
     .footer__grid {
         padding: 24px;
@@ -815,7 +887,7 @@ input {
     }
 }
 
-/* ===== >= 1024px (desktop grande) ===== */
+/* ===== >= 1024px (big desktop) ===== */
 @media (min-width: 1024px) {
     .footer__grid {
         padding: 48px 32px;
